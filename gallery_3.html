@@ -3,27 +3,50 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Projekt 1</title>
+  <title>GS | Third Semester</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <div class="content">
-  <h1>Projekt 1 - Galerie</h1>
+  <h1>Third Semester - Gallery</h1>
+  <h2>Modul: Multimodal Human-Machine Interaction</h2>
+  <h3>Renders for a storyboard</h3>
   <div class="grid">
-    <a href="images/work1_full.png" target="_blank">
-      <img src="images/work1_thumb.png" alt="Vorschau 1">
-    </a>
-    <a href="images/work1_2_full.png" target="_blank">
-      <img src="images/work1_2_thumb.png" alt="Vorschau 2">
-    </a>
-    <a href="images/work1_3_full.png" target="_blank">
-      <img src="images/work1_3_thumb.png" alt="Vorschau 3">
-    </a>
+    <img src="images/third_sem/MMI/Storyboard/Image1Render.png" alt="Assignment" class="thumbnail" onclick="openFullscreen(this.src)">
+    <img src="images/third_sem/MMI/Storyboard/Image2Render.png" alt="Assignment" class="thumbnail" onclick="openFullscreen(this.src)">
+    <img src="images/third_sem/MMI/Storyboard/Image3Render.png" alt="assignment" class="thumbnail" onclick="openFullscreen(this.src)">
+    <img src="images/third_sem/MMI/Storyboard/Image4Render.png" alt="assignment" class="thumbnail" onclick="openFullscreen(this.src)">
+    <img src="images/third_sem/MMI/Storyboard/Image5Render.png" alt="assignment" class="thumbnail" onclick="openFullscreen(this.src)">
+    <img src="images/third_sem/MMI/Storyboard/Image6Render.png" alt="assignment" class="thumbnail" onclick="openFullscreen(this.src)">
   </div>
-  <a href="index.html" class="back">Zurück zur Hauptseite</a>
+  <h3>Handbird a hand controlled flappy bird</h3>
+  <div class="grid">
+    <img src="images/third_sem/MMI/HandBirdMenu.png" alt="Assignment" class="thumbnail" onclick="openFullscreen(this.src)">
+    <img src="images/third_sem/MMI/HandBirdGameOver.png" alt="Assignment" class="thumbnail" onclick="openFullscreen(this.src)">
+    <img src="images/third_sem/MMI/HandBirdPlaying.png" alt="assignment" class="thumbnail" onclick="openFullscreen(this.src)">
+    <div class="text-container">
+      <p>
+        In this module, we learned a lot about different multimodal interactions.
+        Our final assignment was to create a multimodal application.
+        My group decided on creating a Flappy Bird-like game, programmed in Java using the Processing library, that is controlled with voice, hand, or mouse (only in the menu)
+
+        <a class="links" href="https://youtu.be/DHmqYVinogw">View Handbird Demo</a>
+      </p>
+    </div>
+  </div>
 </div>
+
+<!-- Vollbild Container -->
+<div id="fullscreen-container" style="display: none;">
+  <button id="prev-button" class="nav-button">←</button>
+  <img id="fullscreen-image" />
+  <button id="next-button" class="nav-button">→</button>
+  <button id="back-button" onclick="closeFullscreen()">← Back</button>
+</div>
+<script src="scripts.js"></script>
 </body>
+
 <footer>
-  <div>© 2024 Gustav Schwarzbach. Alle Rechte vorbehalten.</div>
+  <a href="index.html" class="back-button">Back</a>
 </footer>
 </html>
