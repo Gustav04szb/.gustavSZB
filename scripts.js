@@ -12,7 +12,8 @@ function openFullscreen(imageSrc) {
     }
 
     currentIndex = images.indexOf(imageSrc);
-    fullscreenImage.src = imageSrc;
+    const fullResImageSrc = imageSrc.replace('/thumbnails/', '/images/');
+    fullscreenImage.src = fullResImageSrc;
 
     fullscreenImage.style.transform = 'scale(1) translate(0px, 0px)';
     fullscreenImage.dataset.scale = 1;
@@ -66,7 +67,9 @@ function prevImage() {
 // Funktion, um das Bild im Vollbildmodus zu aktualisieren
 function updateFullscreenImage() {
     var fullscreenImage = document.getElementById('fullscreen-image');
-    fullscreenImage.src = images[currentIndex];
+    const thumbSrc = images[currentIndex];
+    const fullResSrc = thumbSrc.replace('/thumbnails/', '/images/');
+    fullscreenImage.src = fullResSrc;
 
     // Reset zoom and position
     fullscreenImage.style.transform = 'scale(1) translate(0px, 0px)';
@@ -147,56 +150,62 @@ document.addEventListener('keydown', function(event) {
     if (event.key === 'Escape') {
         closeFullscreen();
     }
-});
+}, {passive: true});
 function adjustTextContainerSize() {
     const textContainers = document.querySelectorAll('.text-container');
 
     textContainers.forEach(textContainer => {
         const gridContainer = textContainer.closest('.grid');
-        if (gridContainer) {
-            const thumbnails = gridContainer.querySelectorAll('.thumbnail');
+        if (!gridContainer) return;
 
-            if (thumbnails.length > 0) {
-                const thumbnailWidth = thumbnails[0].clientWidth;
-                const thumbnailHeight = thumbnails[0].clientHeight;
-                textContainer.style.height = `${thumbnailHeight}px`;
+        // Anzahl der Spalten berechnen
+        const gridStyles = window.getComputedStyle(gridContainer);
+        const columnCount = gridStyles.getPropertyValue('grid-template-columns').split(' ').length;
 
-                const textElement = textContainer.querySelector('p');
-                if (textElement) {
-                    let scaleFactor = 1; // Standardwert für scaleFactor
-                    const textWidth = textElement.clientWidth;
-                    const textHeight = textElement.clientHeight;
+        // Anzahl vorheriger Elemente im Grid zählen
+        const items = Array.from(gridContainer.children);
+        const index = items.indexOf(textContainer);
+        const columnsOccupied = index % columnCount;
 
-                    if (textWidth > thumbnailWidth || textHeight > thumbnailHeight) {
-                        // Schriftgröße anpassen, nicht transform: scale
-                        const scaleX = thumbnailWidth / textWidth;
-                        const scaleY = thumbnailHeight / textHeight;
-                        scaleFactor = Math.min(scaleX, scaleY);
+        // Wie viele Felder übrig sind in der Reihe → Spalten-Spanne setzen
+        let span = columnsOccupied === 0 ? columnCount : columnCount - columnsOccupied;
+        textContainer.style.gridColumn = `span ${span}`;
 
-                        // Clamp für eine fließende Schriftgrößenanpassung
-                        const newFontSize = Math.max(10, Math.min(16, 16 * scaleFactor));
-                        textElement.style.fontSize = `${newFontSize}px`;
+        // Höhe der Textcontainer auf gleiche Höhe wie ein Bild setzen
+        const firstThumbnail = gridContainer.querySelector('.thumbnail');
+        if (firstThumbnail) {
+            const targetHeight = firstThumbnail.clientHeight;
+            textContainer.style.height = `${firstThumbnail.clientHeight}px`;
+            // Skaliere den <p>-Text
+            const text = textContainer.querySelector('p');
+            if (text) {
+                text.style.transform = "scale(1)";
+                text.style.transformOrigin = "center center";
+                text.style.fontSize = "16px";
 
-                        // Zentrierte Skalierung
-                        textElement.style.transformOrigin = 'center';
+                // Nach einem Frame messen
+                requestAnimationFrame(() => {
+                    const scaleX = textContainer.clientWidth / text.scrollWidth;
+                    const scaleY = textContainer.clientHeight / text.scrollHeight;
+                    const scale = Math.min(scaleX, scaleY, 1);
+
+                    if(scale > 0.7) {
+                        text.style.transform = `scale(${scale})`;
                     } else {
-                        textElement.style.fontSize = '16px'; // Standard Schriftgröße
-                        textElement.style.transformOrigin = 'center';
+                        textContainer.style.height = `${text.scrollHeight + 20}px`;
+                        if (span < 3) {
+                            span += 1;
+                            textContainer.style.gridColumn = `span ${span}`;
+                        }
                     }
-
-                    if (scaleFactor < 0.5) {
-                        textContainer.style.gridColumn = 'span 2';
-                    } else {
-                        textContainer.style.gridColumn = 'span 1';
-                    }
-                }
+                });
             }
         }
     });
 }
 
-window.addEventListener('load', adjustTextContainerSize);
-window.addEventListener('resize', adjustTextContainerSize);
+window.addEventListener('load', adjustTextContainerSize,{passive: true});
+window.addEventListener('resize', adjustTextContainerSize,{passive: true});
 
 // Touch-Zoom (Pinch-Geste auf Touchscreens)
 let touchStartDist = 0;
@@ -207,7 +216,7 @@ fullscreenContainer.addEventListener('touchstart', function(event) {
             event.touches[0].clientY - event.touches[1].clientY
         );
     }
-}, false);
+}, {passive: true});
 
 fullscreenContainer.addEventListener('touchmove', function(event) {
     if (event.touches.length === 2) {
@@ -228,4 +237,6 @@ fullscreenContainer.addEventListener('touchmove', function(event) {
 
         touchStartDist = touchMoveDist;
     }
-}, false);
+}, {passive: true});
+
+

@@ -5,58 +5,58 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>GS | Second Semester</title>
   <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-<div class="content">
-  <h1>Second Semester - Gallery</h1>
-  <h2>Modul: Design of interactive interfaces</h2>
-  <div class="grid">
-    <img src="images/second_sem/GIO/JK_FORUM_Forum.svg" alt="Assignment" class="thumbnail" onclick="openFullscreen('images/second_sem/GIO/JK_FORUM_Forum.svg')">
-    <img src="images/second_sem/GIO/GS.png" alt="Assignment" class="thumbnail" onclick="openFullscreen('images/second_sem/GIO/GS.png')">
-    <img src="images/second_sem/GIO/Wehlen@2x.png" alt="assignment" class="thumbnail" onclick="openFullscreen('images/second_sem/GIO/Wehlen@2x.png')">
-    <img src="images/second_sem/GIO/NFS_Beleg.svg" alt="assignment" class="thumbnail" onclick="openFullscreen('images/second_sem/GIO/NFS_Beleg.svg')">
-    <div class="text-container">
-      <p>
-        In this module, we had the task of adding a forum to the website of Jonas Kaufman,
-        redesigning the website of Günter Schlute, as well as redesigning the website of the city of Wehlen.
-        At the end, we were tasked with creating a website design for the project Nature Meets City.
-      </p>
+<a href="index.html" class="floating-back-button">← Back</a>
+<div class="page-wrapper">
+  <div class="content">
+    <h1>Second Semester - Gallery</h1>
+    <h2>Modul: Design of interactive interfaces</h2>
+    <div class="grid">
+      <img src="thumbnails/second_sem/GIO/JK_Forum.png" alt="Assignment" class="thumbnail" onclick="openFullscreen(this.src)">
+      <img src="thumbnails/second_sem/GIO/GS.png" alt="Assignment" class="thumbnail" onclick="openFullscreen(this.src)">
+      <img src="thumbnails/second_sem/GIO/Wehlen@2x.png" alt="assignment" class="thumbnail" onclick="openFullscreen(this.src)">
+      <img src="thumbnails/second_sem/GIO/NFS_Beleg.png" alt="assignment" class="thumbnail" onclick="openFullscreen(this.src)">
+      <div class="text-container">
+        <p>
+          In this module, we had the task of adding a forum to the website of Jonas Kaufman,
+          redesigning the website of Günter Schlute, as well as redesigning the website of the city of Wehlen.
+          At the end, we were tasked with creating a website design for the project Nature Meets City.
+        </p>
+      </div>
+    </div>
+
+    <h2>Modul: Programming II</h2>
+    <div class="grid">
+      <img src="thumbnails/second_sem/prog/Menu.png" alt="Assignment" class="thumbnail" onclick="openFullscreen(this.src)">
+      <img src="thumbnails/second_sem/prog/Load.png" alt="Assignment" class="thumbnail" onclick="openFullscreen(this.src)">
+      <img src="thumbnails/second_sem/prog/Instructions.png" alt="assignment" class="thumbnail" onclick="openFullscreen(this.src)">
+      <img src="thumbnails/second_sem/prog/SinglePlayer.png" alt="assignment" class="thumbnail" onclick="openFullscreen(this.src)">
+      <img src="thumbnails/second_sem/prog/Multiplayer.png" alt="assignment" class="thumbnail" onclick="openFullscreen(this.src)">
+      <img src="thumbnails/second_sem/prog/save.png" alt="assignment" class="thumbnail" onclick="openFullscreen(this.src)">
+      <div class="text-container">
+        <p>
+          In this module, we were tasked with programming Connect Four in C++,<br> which we had previously programmed in C.
+          <a class="links" style="margin: 0px;" href="https://github.com/Gustav04szb/ConnectFour-VisualCPP/tree/main/Kunde">Find the game here!</a>
+        </p>
+      </div>
     </div>
   </div>
 
-  <h2>Modul: Programming II</h2>
-  <div class="grid">
-    <img src="images/second_sem/prog/Menu.png" alt="Assignment" class="thumbnail" onclick="openFullscreen(this.src)">
-    <img src="images/second_sem/prog/Load.png" alt="Assignment" class="thumbnail" onclick="openFullscreen(this.src)">
-    <img src="images/second_sem/prog/Instructions.png" alt="assignment" class="thumbnail" onclick="openFullscreen(this.src)">
-    <img src="images/second_sem/prog/SinglePlayer.png" alt="assignment" class="thumbnail" onclick="openFullscreen(this.src)">
-    <img src="images/second_sem/prog/Multiplayer.png" alt="assignment" class="thumbnail" onclick="openFullscreen(this.src)">
-    <img src="images/second_sem/prog/save.png" alt="assignment" class="thumbnail" onclick="openFullscreen(this.src)">
-    <div class="text-container">
-      <p>
-        In this module, we were tasked with programming Connect Four in C++,<br> which we had previously programmed in C.
-        <a class="links" style="margin: 0px;" href="https://github.com/Gustav04szb/ConnectFour-VisualCPP/tree/main/Kunde">Find the game here!</a>
-      </p>
-
-    </div>
+  <!-- Vollbild Container -->
+  <div id="fullscreen-container" style="display: none;">
+    <button id="prev-button" class="nav-button">←</button>
+    <img id="fullscreen-image" />
+    <button id="next-button" class="nav-button">→</button>
+    <button id="back-button" onclick="closeFullscreen()">← Back</button>
   </div>
-
-
+  <script src="scripts.js"></script>
+  <footer>
+    <div>© 2024 Gustav Schwarzbach. Alle Rechte vorbehalten.</div>
+  </footer>
 </div>
-
-
-
-<!-- Vollbild Container -->
-<div id="fullscreen-container" style="display: none;">
-  <button id="prev-button" class="nav-button">←</button>
-  <img id="fullscreen-image" />
-  <button id="next-button" class="nav-button">→</button>
-  <button id="back-button" onclick="closeFullscreen()">← Back</button>
-</div>
-<script src="scripts.js"></script>
 </body>
 
-<footer>
-  <a href="index.html" class="back-button">Back</a>
-</footer>
+
 </html>
