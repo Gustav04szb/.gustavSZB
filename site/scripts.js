@@ -192,9 +192,8 @@ function adjustTextContainerSize() {
                     if(scale > 0.7) {
                         text.style.transform = `scale(${scale})`;
                     } else {
-                        console.log(text.scrollHeight + 20)
                         textContainer.style.height = `${100}%`;
-                        if (span < 3) {
+                        while(span < 3){
                             span += 1;
                             textContainer.style.gridColumn = `span ${span}`;
                         }
