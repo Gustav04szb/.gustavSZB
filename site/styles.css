@@ -192,12 +192,13 @@ footer {
 .text-container p {
     padding: 0;
     margin: 0 0 10px 0;
-    display: block;
+    display: inline-block;
     width: fit-content;
     text-align: center;
     height: fit-content;
     white-space: normal;
     color: #eee; /* Light text */
+
 }
 
 .text-container a.links {

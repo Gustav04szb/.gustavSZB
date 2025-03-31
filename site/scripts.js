@@ -239,4 +239,3 @@ fullscreenContainer.addEventListener('touchmove', function(event) {
     }
 }, {passive: true});
 
-
