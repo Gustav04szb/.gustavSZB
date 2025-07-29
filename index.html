@@ -3,20 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gustav Schwarzbach</title>
+    <title>Gustav Schwarzbach - Portfolio</title>
 
-    <!-- Beschreibung & SEO -->
+    <!-- SEO & Meta -->
     <meta name="description" content="Digital portfolio by Gustav Schwarzbach – student of Media Informatics with projects in game design, UI, and programming.">
     <meta name="author" content="Gustav Schwarzbach">
-    <meta name="theme-color" content="#07000d">
-
-    <!-- Theme Farbe (für Mobile Browser & PWA) -->
-    <meta name="theme-color" content="#07000d">
+            <meta name="theme-color" content="#EFEFEF">
 
     <!-- Web App Manifest -->
-    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="manifest" href="./manifest.webmanifest">
 
-    <!-- Favicon (kann auch ein Logo sein) -->
+    <!-- Favicon -->
     <link rel="icon" href="site/icons/icon-192.png" type="image/png">
 
     <!-- Open Graph / Social Preview -->
@@ -33,42 +30,149 @@
 
     <!-- Fonts & Styles -->
     <link rel="stylesheet" href="site/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
-<body>
-<div class="page-wrapper">
-    <div class="content">
-        <div class="container">
-            <h1>Gustav Schwarzbach</h1>
-            <p>
-                I am a Media Informatics student currently in my 4th semester at HTW Dresden, passionate about game design and cybersecurity in the context of games.
-                I love learning programming – right now I’m especially focused on C#, and I’ve already worked with C, C++, Java, and Processing.
-            </p>
-            <p>
-                I enjoy creating projects that blend creativity and logic – from developing a voice- and hand-controlled game in Processing to designing 3D models and UI concepts using Blender, Photoshop, and Illustrator.
-            </p>
-            <p>
-                I'm currently open to internships, working student positions, and collaborative opportunities in tech and design fields.
-            </p>
+<body data-theme="light">
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">
+                    <svg class="brand-logo" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 2048 2048">
+                        <path d="M651.3907,1798.4312h-283.04c-162.748,0-294.8341-128.3079-294.8341-286.4018v-976.058c0-158.0947,132.0861-286.4026,294.8341-286.4026h433.9947c51.8909,0,94.347,32.077,94.347,82.4839v128.3079h-474.0923c-58.9672,0-106.1402,45.8249-106.1402,103.1049v921.069c0,57.2809,47.173,103.1049,106.1402,103.1049h174.5413c58.9663,0,106.1402-45.824,106.1402-103.1049v-355.1386h-153.3132c-51.8909,0-94.347-32.077-94.347-82.4839v-45.824c0-50.4069,42.4561-82.4839,94.347-82.4839h396.2556v593.4253c0,158.0938-132.0852,286.4018-294.8332,286.4018Z"/>
+                        <g>
+                            <path d="M1974.4834,1522.0186v227.705c0,26.7894-17.0479,48.7076-43.8364,48.7076h-68.1897v-248.4056c0-30.4421-24.3533-54.7955-54.7955-54.7955h-133.9443c-30.4421,0-54.7955,24.3533-54.7955,54.7955v86.4543c0,84.02-68.1897,152.2098-152.2093,152.2098h-163.1684c-84.02,0-152.2098-68.1897-152.2098-152.2098v-182.651c0-26.7894,17.0474-48.7076,43.8364-48.7076h68.1897v203.3525c0,30.4421,24.3538,54.7955,54.7955,54.7955h133.9443c30.4421,0,54.7955-24.3533,54.7955-54.7955v-86.4552c0-84.02,68.1897-152.2098,152.2098-152.2098h163.168c84.02,0,152.2098,68.1897,152.2098,152.2098Z"/>
+                            <path d="M1974.4834,868.1421v354.3438c0,26.7885-21.9182,48.7067-48.7067,48.7067h-17.0479c-14.6118,0-35.3124-9.7415-47.4891-15.8294l-597.8791-275.195v275.195h-68.1897c-26.789,0-43.8364-21.9182-43.8364-48.7076v-327.5544c0-26.7885,17.0474-48.7067,43.8364-48.7067h13.3942c13.3947,0,36.5305,8.523,57.2311,18.2645l596.661,273.9774v-303.2011h68.1897c26.7885,0,43.8364,21.9182,43.8364,48.7067Z"/>
+                            <path d="M1974.4834,406.6489v283.7189h-775.6593c-26.789,0-47.4896-17.0479-47.4896-45.054v-40.1837l45.054-30.4421c8.5239-6.0879,10.9591-13.3942,10.9591-19.4821,0-28.007-59.6658-56.0131-59.6658-129.074v-13.3942c0-87.6728,69.4073-137.598,148.5561-137.598h166.8216c47.4896,0,88.8903,38.9661,96.1963,75.4961h3.6532c4.8708-51.1418,37.748-101.067,104.7197-101.067h165.604c70.6258,0,141.2507,59.6667,141.2507,157.0801ZM1312.0678,400.561c-26.789,0-48.7071,21.9182-48.7071,48.7067v66.9722c0,26.7894,21.9182,48.7076,48.7071,48.7076h194.8281v-115.6798c0-26.7885-21.9182-48.7067-48.7071-48.7067h-146.121ZM1667.6287,374.9892c-26.7885,0-48.7067,21.9182-48.7067,48.7076v141.2507h243.5353v-141.2507c0-26.7894-21.9182-48.7076-48.7067-48.7076h-146.1219Z"/>
+                        </g>
+                    </svg>
+                </a>
+            </div>
+            <div class="nav-menu">
+                <a href="#home" class="nav-link" id="nav-home">Home</a>
+                <a href="#about" class="nav-link" id="nav-about">About</a>
+                <a href="#projects" class="nav-link" id="nav-projects">Projects</a>
+                <a href="#contact" class="nav-link" id="nav-contact">Contact</a>
+                <button class="lang-toggle" id="lang-toggle" aria-label="Toggle language">
+                    <svg class="lang-toggle-icon" xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 0 24 24" width="20px">
+                        <path d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v1.99h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"/>
+                    </svg>
+                    <span class="lang-text" id="lang-text">DE</span>
+                </button>
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+                    <svg class="theme-toggle-icon" id="theme-icon" xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px">
+                        <path d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Zm0-80q88 0 158-48.5T740-375q-20 5-40 8t-40 3q-123 0-209.5-86.5T364-660q0-20 3-40t8-40q-78 32-126.5 102T200-480q0 116 82 198t198 82Zm-10-270Z"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="nav-burger" id="nav-burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
+    </nav>
 
-        <div class="container-row">
-            <a href="site/gallery_1.html" class="box" data-index="01.">First Semester</a>
-            <a href="site/gallery_2.html" class="box" data-index="02.">Second Semester</a>
-            <a href="site/gallery_3.html" class="box" data-index="03.">Third Semester</a>
-            <a href="site/gallery_4.html" class="box" data-index="04.">Other Projects</a>
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title" id="hero-title">Gustav Schwarzbach</h1>
+                    <p class="hero-subtitle" id="hero-subtitle">Media Informatics Student & Creative Developer</p>
+                    <div class="hero-description" id="hero-description">
+                        <!-- Content will be loaded from JSON -->
+                    </div>
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn btn-primary" id="btn-view-projects">View Projects</a>
+                        <a href="#contact" class="btn btn-secondary" id="btn-get-in-touch">Get in Touch</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>As a Media Informatics student at HTW Dresden, I combine technical expertise with creative vision to build meaningful digital experiences.</p>
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <h3>Programming</h3>
+                                <p>C#, C++, Java, Processing</p>
+                            </div>
+                            <div class="skill-item">
+                                <h3>Design</h3>
+                                <p>UI/UX, 3D Modeling, Graphics</p>
+                            </div>
+                            <div class="skill-item">
+                                <h3>Tools</h3>
+                                <p>Blender, Photoshop, Illustrator</p>
+                            </div>
+                            <div class="skill-item">
+                                <h3>Focus</h3>
+                                <p>Game Design, Cybersecurity</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section">
+            <div class="container">
+                <h2 class="section-title">Projects</h2>
+                <div class="projects-container" id="projects-container">
+                    <!-- Project sections will be dynamically loaded -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h2 class="section-title">Let's Connect</h2>
+                <div class="contact-content">
+                    <div class="contact-text">
+                        <p>I'm currently open to internships, working student positions, and collaborative opportunities in tech and design fields.</p>
+                    </div>
+                    <div class="contact-links" id="contact-links">
+                        <!-- Contact links will be loaded from JSON -->
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text" id="footer-copyright">
+                    <!-- Copyright will be loaded from JSON -->
+                </div>
+                <div class="footer-links" id="footer-links">
+                    <!-- Footer links will be loaded from JSON -->
+                </div>
+            </div>
         </div>
-    </div>
-    <footer>
-        <h2>Contact</h2>
-        <div class="links">
-            <a href="https://www.linkedin.com/in/gustavszb/" target="_blank">LinkedIn</a>
-            <a href="https://github.com/Gustav04szb" target="_blank">GitHub</a>
-            <a href="https://discord.gg/VyhCjD9y" target="_blank">Discord</a>
-            <a href="mailto:me@gustavSZB.com">Mail</a>
-        </div>
-        <div>© 2025 Gustav Schwarzbach. Alle Rechte vorbehalten.</div>
     </footer>
-</div>
+
+    <!-- Fullscreen Image Modal -->
+    <div id="fullscreen-container" class="fullscreen-modal">
+        <button id="close-button" class="modal-close">&times;</button>
+        <button id="prev-button" class="nav-button nav-prev">&#8249;</button>
+        <button id="next-button" class="nav-button nav-next">&#8250;</button>   
+        <img id="fullscreen-image" class="fullscreen-image" alt="Fullscreen view">
+    </div>
+
+    <!-- Scripts -->
+    <script src="site/scripts.js"></script>
 </body>
 </html>

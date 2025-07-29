@@ -1,0 +1,251 @@
+{
+  "site": {
+    "title": "Gustav Schwarzbach",
+    "description": "Digitales Portfolio von Gustav Schwarzbach – Medieninformatik-Student mit Projekten in Spieledesign, UI und Programmierung.",
+    "author": "Gustav Schwarzbach",
+    "url": "https://gustavszb.com/",
+    "email": "me@gustavSZB.com"
+  },
+  "contact": {
+    "linkedin": "https://www.linkedin.com/in/gustavszb/",
+    "github": "https://github.com/Gustav04szb",
+    "discord": "https://discord.gg/VyhCjD9y",
+    "email": "mailto:me@gustavSZB.com"
+  },
+  "content": {
+    "hero": {
+      "title": "Gustav Schwarzbach",
+      "subtitle": "Medieninformatik-Student & Kreativer Entwickler",
+      "description": [
+        "Ich bin Medieninformatik-Student im 4. Semester an der HTW Dresden und begeistere mich für Spieledesign und Cybersecurity im Kontext von Spielen.",
+        "Ich liebe es, programmieren zu lernen – momentan fokussiere ich mich besonders auf C#, und habe bereits mit C, C++, Java und Processing gearbeitet.",
+        "Mir macht es Spaß, Projekte zu erstellen, die Kreativität und Logik verbinden – von der Entwicklung eines sprach- und handgesteuerten Spiels in Processing bis hin zum Design von 3D-Modellen und UI-Konzepten mit Blender, Photoshop und Illustrator.",
+        "Ich bin aktuell offen für Praktika, Werkstudententätigkeiten und Kooperationsmöglichkeiten in den Bereichen Technik und Design."
+      ],
+      "buttons": {
+        "view_projects": "Projekte ansehen",
+        "get_in_touch": "Kontakt aufnehmen"
+      }
+    },
+    "navigation": [
+      {"name": "Start", "href": "#home"},
+      {"name": "Über mich", "href": "#about"},
+      {"name": "Projekte", "href": "#projects"},
+      {"name": "Kontakt", "href": "#contact"}
+    ],
+    "projects": {
+      "first_semester": {
+        "title": "Erstes Semester",
+        "description": "Frühe Projekte zur Erforschung grundlegender Programmierkonzepte und Designprinzipien.",
+        "folders": [
+          {
+            "title": "Programmier-Grundlagen",
+            "description": "Grundlagen der objektorientierten Programmierung und Algorithmen",
+            "images": [
+              {
+                "src": "first_sem/Beleg.png", 
+                "alt": "Programmier-Grundlagen",
+                "title": "OOP Grundlagen",
+                "description": "Erste Schritte in Java mit Klassen und Objekten"
+              },
+              {
+                "src": "first_sem/Beleg4.png", 
+                "alt": "Datenverarbeitung",
+                "title": "Datenverarbeitung",
+                "description": "Einlesen und Verarbeitung verschiedener Datenformate"
+              },
+              {
+                "src": "first_sem/Beleg5.png", 
+                "alt": "Spiele-Logik",
+                "title": "Spiele-Logik",
+                "description": "Implementierung einfacher Spielmechaniken"
+              }
+            ]
+          },
+          {
+            "title": "Visuelle Programmierung",
+            "description": "Grafische Programmierung und mathematische Visualisierung",
+            "images": [
+              {
+                "src": "first_sem/Beleg2.png", 
+                "alt": "Mathematische Visualisierung",
+                "title": "Mathematische Visualisierung",
+                "description": "Darstellung von Funktionen und Geometrie mit Processing"
+              },
+              {
+                "src": "first_sem/Beleg3.png", 
+                "alt": "GUI-Entwicklung",
+                "title": "Erste GUI-Entwicklung",
+                "description": "Interaktive Benutzeroberflächen mit Event-Handling"
+              }
+            ]
+          }
+        ]
+      },
+      "second_semester": {
+        "title": "Zweites Semester", 
+        "description": "Fortgeschrittene Programmierprojekte mit Fokus auf Grafiken und Interface-Design.",
+        "folders": [
+          {
+            "title": "GIO Projekte",
+            "description": "Grafische Benutzeroberflächen und Interface-Design",
+            "images": [
+              {
+                "src": "second_sem/GIO/GS.png", 
+                "alt": "GIO Projekt",
+                "title": "GUI Framework",
+                "description": "Entwicklung komplexer GUI-Anwendungen mit Layout-Managern"
+              },
+              {
+                "src": "second_sem/GIO/JK_Forum.png", 
+                "alt": "Forum Interface", 
+                "title": "Forum Interface",
+                "description": "Webbasierte Forum-Anwendung mit modernem Design"
+              },
+              {
+                "src": "second_sem/GIO/NFS_Beleg.png", 
+                "alt": "NFS Projekt", 
+                "title": "Network File System",
+                "description": "Verteiltes Dateisystem mit Client-Server-Architektur"
+              },
+              {
+                "src": "second_sem/GIO/Wehlen@2x.png", 
+                "alt": "Wahlen Projekt",
+                "title": "Datenvisualisierung",
+                "description": "Interaktive Visualisierung von Wahldaten"
+              }
+            ]
+          },
+          {
+            "title": "Spieleentwicklung",
+            "description": "Programmierung von Spielmechaniken und Interface-Systemen",
+            "images": [
+              {
+                "src": "second_sem/prog/Menu.png", 
+                "alt": "Spielmenü",
+                "title": "Hauptmenü",
+                "description": "Modernes Spielmenü mit Navigation und Einstellungen"
+              },
+              {
+                "src": "second_sem/prog/Instructions.png", 
+                "alt": "Spielanleitung",
+                "title": "Tutorial System",
+                "description": "Interaktives Tutorial mit schrittweisen Anleitungen"
+              },
+              {
+                "src": "second_sem/prog/SinglePlayer.png", 
+                "alt": "Einzelspieler Modus",
+                "title": "Einzelspieler",
+                "description": "KI-gesteuerte Gegner und progressives Levelsystem"
+              },
+              {
+                "src": "second_sem/prog/Multiplayer.png", 
+                "alt": "Mehrspieler Modus",
+                "title": "Mehrspieler",
+                "description": "Netzwerk-basiertes Multiplayer mit Synchronisation"
+              },
+              {
+                "src": "second_sem/prog/Load.png", 
+                "alt": "Ladebildschirm",
+                "title": "Lade-System",
+                "description": "Loading-Interface mit Fortschrittsanzeige"
+              },
+              {
+                "src": "second_sem/prog/save.png", 
+                "alt": "Speicher-Funktion",
+                "title": "Speicher-System",
+                "description": "Save/Load-System mit Datenserialisierung"
+              }
+            ]
+          }
+        ]
+      },
+      "third_semester": {
+        "title": "Drittes Semester",
+        "description": "Komplexe interaktive Projekte inklusive Spieleentwicklung und Multimedia-Interfaces.",
+        "folders": [
+          {
+            "title": "HandBird Spiel",
+            "description": "Gestensteuertes Spiel mit Computer Vision und Hand-Tracking",
+            "images": [
+              {
+                "src": "../video/HandBirdDemo.mp4", 
+                "alt": "HandBird Gameplay Demo",
+                "title": "Gameplay Demo",
+                "description": "Live Demonstration des handgesteuerten Spiels",
+                "type": "video"
+              },
+              {
+                "src": "third_sem/MMI/HandBirdMenu.png", 
+                "alt": "HandBird Menü",
+                "title": "Hauptmenü",
+                "description": "Startbildschirm mit Kamera-Integration und Gestenerkennung"
+              },
+              {
+                "src": "third_sem/MMI/HandBirdPlaying.png", 
+                "alt": "HandBird Spielen",
+                "title": "Gameplay",
+                "description": "Live Gameplay mit Hand-Tracking Steuerung"
+              },
+              {
+                "src": "third_sem/MMI/HandBirdGameOver.png", 
+                "alt": "HandBird Game Over",
+                "title": "Spielende",
+                "description": "Endbildschirm mit Punktzahl und Neustart-Optionen"
+              }
+            ]
+          },
+          {
+            "title": "Interaktives Storyboard",
+            "description": "Multimediales Storytelling-Projekt mit interaktiven Elementen",
+            "images": [
+              {
+                "src": "third_sem/MMI/Storyboard/Image1Render.png", 
+                "alt": "Storyboard 1",
+                "title": "Szene 1 - Einführung",
+                "description": "Anfangssequenz mit Character-Einführung"
+              },
+              {
+                "src": "third_sem/MMI/Storyboard/Image2Render.png", 
+                "alt": "Storyboard 2",
+                "title": "Szene 2 - Entwicklung",
+                "description": "Erste Interaktionsmöglichkeiten für den Benutzer"
+              },
+              {
+                "src": "third_sem/MMI/Storyboard/Image3Render.png", 
+                "alt": "Storyboard 3",
+                "title": "Szene 3 - Konflikt",
+                "description": "Zentrale Konfliktszene mit Entscheidungspfaden"
+              },
+              {
+                "src": "third_sem/MMI/Storyboard/Image4Render.png", 
+                "alt": "Storyboard 4",
+                "title": "Szene 4 - Wendepunkt",
+                "description": "Dramatische Wende mit visuellen Effekten"
+              },
+              {
+                "src": "third_sem/MMI/Storyboard/Image5Render.png", 
+                "alt": "Storyboard 5",
+                "title": "Szene 5 - Auflösung",
+                "description": "Auflösung mit adaptivem Storytelling"
+              },
+              {
+                "src": "third_sem/MMI/Storyboard/Image6Render.png", 
+                "alt": "Storyboard 6",
+                "title": "Finale",
+                "description": "Verschiedene Endungen basierend auf Benutzerentscheidungen"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "footer": {
+    "copyright": "© 2025 Gustav Schwarzbach. Alle Rechte vorbehalten.",
+    "links": [
+      {"name": "Datenschutz", "href": "#privacy"},
+      {"name": "Impressum", "href": "#imprint"}
+    ]
+  }
+} 

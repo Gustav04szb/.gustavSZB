@@ -1,0 +1,251 @@
+{
+  "site": {
+    "title": "Gustav Schwarzbach",
+    "description": "Digital portfolio by Gustav Schwarzbach – Media Informatics student with projects in game design, UI, and programming.",
+    "author": "Gustav Schwarzbach",
+    "url": "https://gustavszb.com/",
+    "email": "me@gustavSZB.com"
+  },
+  "contact": {
+    "linkedin": "https://www.linkedin.com/in/gustavszb/",
+    "github": "https://github.com/Gustav04szb",
+    "discord": "https://discord.gg/VyhCjD9y",
+    "email": "mailto:me@gustavSZB.com"
+  },
+  "content": {
+    "hero": {
+      "title": "Gustav Schwarzbach",
+      "subtitle": "Media Informatics Student & Creative Developer",
+      "description": [
+        "I am a Media Informatics student currently in my 4th semester at HTW Dresden, passionate about game design and cybersecurity in the context of games.",
+        "I love learning programming – right now I'm especially focused on C#, and I've already worked with C, C++, Java, and Processing.",
+        "I enjoy creating projects that blend creativity and logic – from developing a voice- and hand-controlled game in Processing to designing 3D models and UI concepts using Blender, Photoshop, and Illustrator.",
+        "I'm currently open to internships, working student positions, and collaborative opportunities in tech and design fields."
+      ],
+      "buttons": {
+        "view_projects": "View Projects",
+        "get_in_touch": "Get in Touch"
+      }
+    },
+    "navigation": [
+      {"name": "Home", "href": "#home"},
+      {"name": "About", "href": "#about"},
+      {"name": "Projects", "href": "#projects"},
+      {"name": "Contact", "href": "#contact"}
+    ],
+    "projects": {
+      "first_semester": {
+        "title": "First Semester",
+        "description": "Early projects exploring basic programming concepts and design principles.",
+        "folders": [
+          {
+            "title": "Programming Fundamentals",
+            "description": "Fundamentals of object-oriented programming and algorithms",
+            "images": [
+              {
+                "src": "first_sem/Beleg.png", 
+                "alt": "Programming Basics",
+                "title": "OOP Fundamentals",
+                "description": "First steps in Java with classes and objects"
+              },
+              {
+                "src": "first_sem/Beleg4.png", 
+                "alt": "Data Processing",
+                "title": "Data Processing",
+                "description": "Reading and processing various data formats"
+              },
+              {
+                "src": "first_sem/Beleg5.png", 
+                "alt": "Game Logic",
+                "title": "Game Logic",
+                "description": "Implementation of simple game mechanics"
+              }
+            ]
+          },
+          {
+            "title": "Visual Programming",
+            "description": "Graphical programming and mathematical visualization",
+            "images": [
+              {
+                "src": "first_sem/Beleg2.png", 
+                "alt": "Math Visualization",
+                "title": "Mathematical Visualization",
+                "description": "Representation of functions and geometry with Processing"
+              },
+              {
+                "src": "first_sem/Beleg3.png", 
+                "alt": "GUI Development",
+                "title": "First GUI Development",
+                "description": "Interactive user interfaces with event handling"
+              }
+            ]
+          }
+        ]
+      },
+      "second_semester": {
+        "title": "Second Semester", 
+        "description": "Advanced programming projects with focus on graphics and interface design.",
+        "folders": [
+          {
+            "title": "GIO Projects",
+            "description": "Graphical user interfaces and interface design",
+            "images": [
+              {
+                "src": "second_sem/GIO/GS.png", 
+                "alt": "GIO Project",
+                "title": "GUI Framework",
+                "description": "Development of complex GUI applications with layout managers"
+              },
+              {
+                "src": "second_sem/GIO/JK_Forum.png", 
+                "alt": "Forum Interface", 
+                "title": "Forum Interface",
+                "description": "Web-based forum application with modern design"
+              },
+              {
+                "src": "second_sem/GIO/NFS_Beleg.png", 
+                "alt": "NFS Project", 
+                "title": "Network File System",
+                "description": "Distributed file system with client-server architecture"
+              },
+              {
+                "src": "second_sem/GIO/Wehlen@2x.png", 
+                "alt": "Election Project",
+                "title": "Data Visualization",
+                "description": "Interactive visualization of election data"
+              }
+            ]
+          },
+          {
+            "title": "Game Development",
+            "description": "Programming of game mechanics and interface systems",
+            "images": [
+              {
+                "src": "second_sem/prog/Menu.png", 
+                "alt": "Game Menu",
+                "title": "Main Menu",
+                "description": "Modern game menu with navigation and settings"
+              },
+              {
+                "src": "second_sem/prog/Instructions.png", 
+                "alt": "Game Instructions",
+                "title": "Tutorial System",
+                "description": "Interactive tutorial with step-by-step instructions"
+              },
+              {
+                "src": "second_sem/prog/SinglePlayer.png", 
+                "alt": "SinglePlayer Mode",
+                "title": "Single Player",
+                "description": "AI-controlled opponents and progressive level system"
+              },
+              {
+                "src": "second_sem/prog/Multiplayer.png", 
+                "alt": "Multiplayer Mode",
+                "title": "Multiplayer",
+                "description": "Network-based multiplayer with synchronization"
+              },
+              {
+                "src": "second_sem/prog/Load.png", 
+                "alt": "Load Screen",
+                "title": "Loading System",
+                "description": "Loading interface with progress indicator"
+              },
+              {
+                "src": "second_sem/prog/save.png", 
+                "alt": "Save Function",
+                "title": "Save System",
+                "description": "Save/Load system with data serialization"
+              }
+            ]
+          }
+        ]
+      },
+      "third_semester": {
+        "title": "Third Semester",
+        "description": "Complex interactive projects including game development and multimedia interfaces.",
+        "folders": [
+          {
+            "title": "HandBird Game",
+            "description": "Gesture-controlled game with computer vision and hand tracking",
+            "images": [
+              {
+                "src": "../video/HandBirdDemo.mp4", 
+                "alt": "HandBird Gameplay Demo",
+                "title": "Gameplay Demo",
+                "description": "Live demonstration of the hand-controlled game",
+                "type": "video"
+              },
+              {
+                "src": "third_sem/MMI/HandBirdMenu.png", 
+                "alt": "HandBird Menu",
+                "title": "Main Menu",
+                "description": "Start screen with camera integration and gesture recognition"
+              },
+              {
+                "src": "third_sem/MMI/HandBirdPlaying.png", 
+                "alt": "HandBird Playing",
+                "title": "Gameplay",
+                "description": "Live gameplay with hand-tracking controls"
+              },
+              {
+                "src": "third_sem/MMI/HandBirdGameOver.png", 
+                "alt": "HandBird Game Over",
+                "title": "Game Over",
+                "description": "End screen with score and restart options"
+              }
+            ]
+          },
+          {
+            "title": "Interactive Storyboard",
+            "description": "Multimedia storytelling project with interactive elements",
+            "images": [
+              {
+                "src": "third_sem/MMI/Storyboard/Image1Render.png", 
+                "alt": "Storyboard 1",
+                "title": "Scene 1 - Introduction",
+                "description": "Opening sequence with character introduction"
+              },
+              {
+                "src": "third_sem/MMI/Storyboard/Image2Render.png", 
+                "alt": "Storyboard 2",
+                "title": "Scene 2 - Development",
+                "description": "First interaction possibilities for the user"
+              },
+              {
+                "src": "third_sem/MMI/Storyboard/Image3Render.png", 
+                "alt": "Storyboard 3",
+                "title": "Scene 3 - Conflict",
+                "description": "Central conflict scene with decision paths"
+              },
+              {
+                "src": "third_sem/MMI/Storyboard/Image4Render.png", 
+                "alt": "Storyboard 4",
+                "title": "Scene 4 - Turning Point",
+                "description": "Dramatic turn with visual effects"
+              },
+              {
+                "src": "third_sem/MMI/Storyboard/Image5Render.png", 
+                "alt": "Storyboard 5",
+                "title": "Scene 5 - Resolution",
+                "description": "Resolution with adaptive storytelling"
+              },
+              {
+                "src": "third_sem/MMI/Storyboard/Image6Render.png", 
+                "alt": "Storyboard 6",
+                "title": "Finale",
+                "description": "Different endings based on user decisions"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "footer": {
+    "copyright": "© 2025 Gustav Schwarzbach. All rights reserved.",
+    "links": [
+      {"name": "Privacy", "href": "#privacy"},
+      {"name": "Imprint", "href": "#imprint"}
+    ]
+  }
+} 
