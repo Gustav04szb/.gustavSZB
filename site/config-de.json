@@ -495,37 +495,37 @@
             "description": "Nach meiner aktiven Zeit bei Blayze Games habe ich in meiner Freizeit weitere Skins entworfen – von Handschuhen bis hin zu Messern. Einige dieser Designs wurden später ins Spiel übernommen. Hier stelle ich eine Auswahl dieser Arbeiten vor.",
             "images": [
               {
-                "src": "other_projects/ForwardAssault/skins/Offer.png",
+                "src": "other_projects/ForwardAssault/Skins/Offer.png",
                 "alt": "Skin-Angebot Übersicht",
                 "title": "Skin-Angebotsübersicht",
                 "description": "Visuelle Übersicht aller entworfenen Skins mit Glove- und Beretta-Freischaltungen."
               },
               {
-                "src": "other_projects/ForwardAssault/skins/Blossom_Product_Render.gif",
+                "src": "other_projects/ForwardAssault/Skins/Blossom_Product_Render.gif",
                 "alt": "Blossom Skin Animation",
                 "title": "Blossom",
                 "description": "Animierter Produkt-Render des Blossom-Messers mit floraler Textur."
               },
               {
-                "src": "other_projects/ForwardAssault/skins/redBlue_Product.gif",
+                "src": "other_projects/ForwardAssault/Skins/redBlue_Product.gif",
                 "alt": "Red Blue Skin Animation",
                 "title": "Red Blue",
                 "description": "GIF-Render des zweifarbigen Red Blue Skins – glitchiger Look inklusive."
               },
               {
-                "src": "other_projects/ForwardAssault/skins/Webbed_Product.gif",
+                "src": "other_projects/ForwardAssault/Skins/Webbed_Product.gif",
                 "alt": "Webbed Skin",
                 "title": "Webbed (GIF 1)",
                 "description": "Zweite GIF-Ansicht des Webbed Skins."
               },
               {
-                "src": "other_projects/ForwardAssault/skins/Webbed_PR.gif",
+                "src": "other_projects/ForwardAssault/Skins/Webbed_PR.gif",
                 "alt": "Webbed Skin",
                 "title": "Webbed (GIF 2)",
                 "description": "Erster animierter Produkt-Render des Webbed Skins"
               },
               {
-                "src": "other_projects/ForwardAssault/skins/RIP2_PR.gif",
+                "src": "other_projects/ForwardAssault/Skins/RIP2_PR.gif",
                 "alt": "RIP II Skin Animation",
                 "title": "RIP II",
                 "description": "GIF-Vorschau des RIP II Skins – aggressives Rot-Schwarz-Schema."
