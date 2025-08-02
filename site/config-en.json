@@ -1,7 +1,7 @@
 {
   "site": {
     "title": "Gustav Schwarzbach",
-    "description": "Digital portfolio by Gustav Schwarzbach – Media Informatics student with projects in game design, UI, and programming.",
+    "description": "Digital portfolio of Gustav Schwarzbach – Media Computer Science student with projects in game design, UI and programming.",
     "author": "Gustav Schwarzbach",
     "url": "https://gustavszb.com/",
     "email": "me@gustavSZB.com"
@@ -9,18 +9,17 @@
   "contact": {
     "linkedin": "https://www.linkedin.com/in/gustavszb/",
     "github": "https://github.com/Gustav04szb",
-    "discord": "https://discord.gg/VyhCjD9y",
+    "discord": "https://discord.gg/mYGdMyu5",
     "email": "mailto:me@gustavSZB.com"
   },
   "content": {
     "hero": {
       "title": "Gustav Schwarzbach",
-      "subtitle": "Media Informatics Student & Creative Developer",
+      "subtitle": "Media Computer Science Student",
       "description": [
-        "I am a Media Informatics student currently in my 4th semester at HTW Dresden, passionate about game design and cybersecurity in the context of games.",
-        "I love learning programming – right now I'm especially focused on C#, and I've already worked with C, C++, Java, and Processing.",
-        "I enjoy creating projects that blend creativity and logic – from developing a voice- and hand-controlled game in Processing to designing 3D models and UI concepts using Blender, Photoshop, and Illustrator.",
-        "I'm currently open to internships, working student positions, and collaborative opportunities in tech and design fields."
+        "I'm Gustav Schwarzbach, a Media Computer Science student in the 5th semester at HTW Dresden – tech-savvy, creative and curious. I’m especially fascinated by the combination of technology and creativity – whether in games, animation or design.",
+        "Over the past years, I’ve gained practical experience in software development and design – from Java, C++ and C# to .NET and Processing, as well as UI design and 3D modeling. Right now, I'm especially into Blender – my focus is on 3D animation.",
+        "I’m an open-minded and helpful person who enjoys working in teams and diving deep into exciting projects. This site showcases some of my work – feel free to explore and get inspired. Who knows, maybe it leads to an interesting collaboration."
       ],
       "buttons": {
         "view_projects": "View Projects",
@@ -28,224 +27,575 @@
       }
     },
     "navigation": [
-      {"name": "Home", "href": "#home"},
-      {"name": "About", "href": "#about"},
-      {"name": "Projects", "href": "#projects"},
-      {"name": "Contact", "href": "#contact"}
+      { "name": "Home", "href": "#home" },
+      { "name": "About", "href": "#about" },
+      { "name": "Projects", "href": "#projects" },
+      { "name": "Contact", "href": "#contact" }
     ],
-    "projects": {
-      "first_semester": {
-        "title": "First Semester",
-        "description": "Early projects exploring basic programming concepts and design principles.",
-        "folders": [
+    "sections": {
+      "about": {
+        "title": "About Me",
+        "description": "I enjoy working on projects that combine technology with design. I’m especially interested in game mechanics, visual storytelling and digital forms of expression – from user interfaces to 3D animation.",
+        "skills": [
           {
-            "title": "Programming Fundamentals",
-            "description": "Fundamentals of object-oriented programming and algorithms",
-            "images": [
-              {
-                "src": "first_sem/Beleg.png", 
-                "alt": "Programming Basics",
-                "title": "OOP Fundamentals",
-                "description": "First steps in Java with classes and objects"
-              },
-              {
-                "src": "first_sem/Beleg4.png", 
-                "alt": "Data Processing",
-                "title": "Data Processing",
-                "description": "Reading and processing various data formats"
-              },
-              {
-                "src": "first_sem/Beleg5.png", 
-                "alt": "Game Logic",
-                "title": "Game Logic",
-                "description": "Implementation of simple game mechanics"
-              }
-            ]
+            "title": "Programming",
+            "description": "Java, C, C++, C#, .NET, Processing"
           },
           {
-            "title": "Visual Programming",
-            "description": "Graphical programming and mathematical visualization",
-            "images": [
-              {
-                "src": "first_sem/Beleg2.png", 
-                "alt": "Math Visualization",
-                "title": "Mathematical Visualization",
-                "description": "Representation of functions and geometry with Processing"
-              },
-              {
-                "src": "first_sem/Beleg3.png", 
-                "alt": "GUI Development",
-                "title": "First GUI Development",
-                "description": "Interactive user interfaces with event handling"
-              }
-            ]
+            "title": "Design",
+            "description": "UI/UX, visual storytelling, 3D modeling and texturing"
+          },
+          {
+            "title": "Tools",
+            "description": "Blender, Photoshop, Illustrator, Premiere Pro, Visual Studio, IntelliJ, WebStorm, Rider"
+          },
+          {
+            "title": "Work Style",
+            "description": "curious, independent, team-oriented"
           }
         ]
       },
-      "second_semester": {
-        "title": "Second Semester", 
-        "description": "Advanced programming projects with focus on graphics and interface design.",
+      "projects": {
+        "title": "Projects"
+      },
+      "contact": {
+        "title": "Let's Connect",
+        "description": "I'm always open to exchange, collaboration or joint projects – whether in games, design or technology. Feel free to reach out if you have an idea or are just curious."
+      }
+    },
+    "projects":[
+      {
+        "id": "Sem-one-three",
+        "title": "Semester 1 to 3",
+        "description": "Insights into the early stages of my studies – from initial programming projects to interactive applications, UI concepts and first games.",
         "folders": [
+          {
+            "title": "Design Basics",
+            "description": "Design assignment on layout, typography and structure. The task was to create a fictional website or brochure based on learned design principles. I designed a complete web presentation for an imaginary chocolate company in Adobe InDesign.",
+            "images": [
+              {
+                "src": "first_sem/Beleg.png",
+                "alt": "Cocoa Schoki Homepage",
+                "title": "Homepage",
+                "description": "Cover page with emphasis on text-image hierarchy and clean typographic layout."
+              },
+              {
+                "src": "first_sem/Beleg2.png",
+                "alt": "Cocoa Schoki Product Overview",
+                "title": "Store (Overview)",
+                "description": "Product display with rating system and CTA buttons, laid out in InDesign with crop marks."
+              },
+              {
+                "src": "first_sem/Beleg3.png",
+                "alt": "Cocoa Schoki Contact Page",
+                "title": "Contact",
+                "description": "Contact form with structured layout and visual consistency."
+              },
+              {
+                "src": "first_sem/Beleg4.png",
+                "alt": "Cocoa Schoki Imprint",
+                "title": "Imprint",
+                "description": "Legal page design with typographic coordination."
+              },
+              {
+                "src": "first_sem/Beleg5.png",
+                "alt": "Cocoa Schoki Large Product View",
+                "title": "Product Presentation",
+                "description": "Focused product display with balanced layout of image, price and text."
+              }
+            ]
+          },
           {
             "title": "GIO Projects",
-            "description": "Graphical user interfaces and interface design",
+            "description": "In the module 'Designing Interactive Interfaces' (GIO), we analyzed existing websites and redesigned or extended them focusing on structure, design and user guidance.",
             "images": [
               {
-                "src": "second_sem/GIO/GS.png", 
-                "alt": "GIO Project",
-                "title": "GUI Framework",
-                "description": "Development of complex GUI applications with layout managers"
+                "src": "second_sem/GIO/JK_Forum.png",
+                "alt": "Jonas Kaufmann Forum",
+                "title": "Forum Jonas Kaufmann",
+                "description": "Extension of an artist’s site with a fan forum. Applied principles: organization, structure, modules and clear separation of content and interaction."
               },
               {
-                "src": "second_sem/GIO/JK_Forum.png", 
-                "alt": "Forum Interface", 
-                "title": "Forum Interface",
-                "description": "Web-based forum application with modern design"
+                "src": "second_sem/GIO/GS.png",
+                "alt": "Redesign Günter Schulte",
+                "title": "Günter Schulte Homepage",
+                "description": "Redesign of a portfolio homepage with focus on elegance, simplicity, proportion and contrast. Goal: expressive and visually minimal presentation."
               },
               {
-                "src": "second_sem/GIO/NFS_Beleg.png", 
-                "alt": "NFS Project", 
-                "title": "Network File System",
-                "description": "Distributed file system with client-server architecture"
+                "src": "second_sem/GIO/Wehlen@2x.png",
+                "alt": "Redesign City of Wehlen",
+                "title": "City Website Wehlen",
+                "description": "Complete redesign of an outdated municipal website using the 4+1 principles of design (proximity, alignment, repetition, contrast and focal point)."
               },
               {
-                "src": "second_sem/GIO/Wehlen@2x.png", 
-                "alt": "Election Project",
-                "title": "Data Visualization",
-                "description": "Interactive visualization of election data"
+                "src": "second_sem/GIO/NFS_Beleg.png",
+                "alt": "Nature meets City",
+                "title": "Nature Finds City",
+                "description": "Independent design for an environmental project by the city of Dresden. Created with and without AI tools based on core communication design principles."
               }
             ]
           },
           {
-            "title": "Game Development",
-            "description": "Programming of game mechanics and interface systems",
+            "title": "Connect Four in C++",
+            "description": "As part of the Programming II module, I developed a fully functional Connect Four game in C++. The focus was on object orientation, user guidance and stable game logic. The result includes a structured menu, a tutorial system and a graphical multiplayer mode. A short demo shows the gameplay flow.",
             "images": [
               {
-                "src": "second_sem/prog/Menu.png", 
+                "src": "second_sem/prog/Menu.png",
                 "alt": "Game Menu",
                 "title": "Main Menu",
-                "description": "Modern game menu with navigation and settings"
+                "description": "Modern game menu with navigation and basic settings."
               },
               {
-                "src": "second_sem/prog/Instructions.png", 
+                "src": "second_sem/prog/Instructions.png",
                 "alt": "Game Instructions",
                 "title": "Tutorial System",
-                "description": "Interactive tutorial with step-by-step instructions"
+                "description": "Visual guide explaining the rules and controls."
               },
               {
-                "src": "second_sem/prog/SinglePlayer.png", 
-                "alt": "SinglePlayer Mode",
-                "title": "Single Player",
-                "description": "AI-controlled opponents and progressive level system"
-              },
-              {
-                "src": "second_sem/prog/Multiplayer.png", 
+                "src": "second_sem/prog/Multiplayer.png",
                 "alt": "Multiplayer Mode",
                 "title": "Multiplayer",
-                "description": "Network-based multiplayer with synchronization"
+                "description": "Game scene in local multiplayer mode showing player turns."
               },
               {
-                "src": "second_sem/prog/Load.png", 
-                "alt": "Load Screen",
-                "title": "Loading System",
-                "description": "Loading interface with progress indicator"
+                "src": "../video/ConnectFourDemo.mp4",
+                "alt": "Video Demo",
+                "title": "Gameplay Demo",
+                "description": "Short gameplay video showing typical interactions.",
+                "type": "video"
+              }
+            ]
+          },
+          {
+            "title": "HandBird – Multimodal Java Game",
+            "description": "In the module 'Multimodal Human-Computer Interaction' we developed a game in Java using the Processing library. It is controlled via hand movement, voice input or mouse (only in the menu). The goal was to technically implement different forms of interaction. Our solution: a Flappy-Bird-inspired game with camera-based hand tracking.",
+            "images": [
+              {
+                "src": "third_sem/MMI/HandBirdMenu.png",
+                "alt": "HandBird Menu",
+                "title": "Main Menu",
+                "description": "Start screen with camera integration and gesture recognition."
               },
               {
-                "src": "second_sem/prog/save.png", 
-                "alt": "Save Function",
-                "title": "Save System",
-                "description": "Save/Load system with data serialization"
+                "src": "third_sem/MMI/HandBirdPlaying.png",
+                "alt": "HandBird Playing",
+                "title": "Gameplay",
+                "description": "Flight through obstacles, controlled by hand movement via camera."
+              },
+              {
+                "src": "third_sem/MMI/HandBirdGameOver.png",
+                "alt": "HandBird Game Over",
+                "title": "Game Over",
+                "description": "End scene showing score and high score."
+              },
+              {
+                "src": "../video/HandBirdDemo.mp4",
+                "alt": "HandBird Gameplay Demo",
+                "title": "Gameplay Demo",
+                "description": "Short video demo of the game with live hand control.",
+                "type": "video"
               }
             ]
           }
         ]
       },
-      "third_semester": {
-        "title": "Third Semester",
-        "description": "Complex interactive projects including game development and multimedia interfaces.",
+      {
+        "id": "Sem-four-six",
+        "title": "Semester 4 to 6",
+        "description": "Advanced projects focused on software architecture, 3D graphics, web technologies and multimodal interaction. Besides C#/.NET, complex applications in areas like computer graphics, audio/video processing and interactive systems were covered.",
         "folders": [
           {
-            "title": "HandBird Game",
-            "description": "Gesture-controlled game with computer vision and hand tracking",
+            "title": "Computer Graphics",
+            "description": "In the Computer Graphics module, I created a detailed assignment reconstructing a historical building based on preservation blueprints. In the lab, we learned modeling and texturing techniques through smaller projects (cube, shield, temple, etc.).",
             "images": [
               {
-                "src": "../video/HandBirdDemo.mp4", 
-                "alt": "HandBird Gameplay Demo",
-                "title": "Gameplay Demo",
-                "description": "Live demonstration of the hand-controlled game",
-                "type": "video"
+                "src": "fourth_sem/cg/BelegRender1png.png",
+                "alt": "Building Reconstruction Exterior",
+                "title": "Building Reconstruction Exterior",
+                "description": "Part of a 3D reconstruction of a listed building in Saxony. The model is based on historical blueprints."
               },
               {
-                "src": "third_sem/MMI/HandBirdMenu.png", 
-                "alt": "HandBird Menu",
-                "title": "Main Menu",
-                "description": "Start screen with camera integration and gesture recognition"
+                "src": "fourth_sem/cg/BelegRender2png.png",
+                "alt": "Building Reconstruction Interior",
+                "title": "Building Reconstruction Interior",
+                "description": "Interior structure of the reconstructed building. The project scope was large and not fully completed."
               },
               {
-                "src": "third_sem/MMI/HandBirdPlaying.png", 
-                "alt": "HandBird Playing",
-                "title": "Gameplay",
-                "description": "Live gameplay with hand-tracking controls"
+                "src": "fourth_sem/cg/Shield-Sword.png",
+                "alt": "Rendered Shield",
+                "title": "Render Shield",
+                "description": "Exercise on modeling, UV unwrapping and material creation for a shield with emblem and sword."
               },
               {
-                "src": "third_sem/MMI/HandBirdGameOver.png", 
-                "alt": "HandBird Game Over",
-                "title": "Game Over",
-                "description": "End screen with score and restart options"
+                "src": "fourth_sem/cg/Shield-SwordWire.png",
+                "alt": "Shield Wireframe",
+                "title": "Shield Wireframe",
+                "description": "Wireframe view of the model to analyze geometry."
+              },
+              {
+                "src": "fourth_sem/cg/Tempel.png",
+                "alt": "Temple Front View",
+                "title": "Temple Model",
+                "description": "Practice project on building classical architectural forms and using proportions."
+              },
+              {
+                "src": "fourth_sem/cg/Tempel2.png",
+                "alt": "Temple Columns",
+                "title": "Temple Details",
+                "description": "Close-up of temple columns focusing on materiality and structure."
+              },
+              {
+                "src": "fourth_sem/cg/WuerfelGlas_Render2.png",
+                "alt": "Glass Cube",
+                "title": "Cube in Glass",
+                "description": "Scene practicing glass, transparency and shader effects with an animated dice throw."
+              },
+              {
+                "src": "fourth_sem/cg/WuerfelGlas_Render3.png",
+                "alt": "Cube Close-up",
+                "title": "Cube Close-up",
+                "description": "Detail view focused on light refraction, reflection and material settings."
               }
             ]
           },
           {
-            "title": "Interactive Storyboard",
-            "description": "Multimedia storytelling project with interactive elements",
+            "title": "C# & .NET",
+            "description": "As part of the elective module, I completed several tasks to learn the fundamentals of C# and the .NET framework. Shown here are two selected projects: a custom drawing application and a chat system using client-server communication via sockets.",
             "images": [
               {
-                "src": "third_sem/MMI/Storyboard/Image1Render.png", 
-                "alt": "Storyboard 1",
-                "title": "Scene 1 - Introduction",
-                "description": "Opening sequence with character introduction"
+                "src": "fourth_sem/csharp/DrawingApplication.png",
+                "alt": "Drawing Application",
+                "title": "Custom Drawing Application",
+                "description": "A mini paint app with drawing tools, color selection, line styles and text function."
               },
               {
-                "src": "third_sem/MMI/Storyboard/Image2Render.png", 
-                "alt": "Storyboard 2",
-                "title": "Scene 2 - Development",
-                "description": "First interaction possibilities for the user"
+                "src": "fourth_sem/csharp/Server-Client.png",
+                "alt": "Chat Client & Server",
+                "title": "Server-Client Chat",
+                "description": "A multi-user chat implemented via socket connection with server control."
               },
               {
-                "src": "third_sem/MMI/Storyboard/Image3Render.png", 
-                "alt": "Storyboard 3",
-                "title": "Scene 3 - Conflict",
-                "description": "Central conflict scene with decision paths"
+                "src": "../video/csDemo.mp4",
+                "alt": "Demo: Drawing App & Chat",
+                "title": "C# Project Demo",
+                "description": "Short video presentation of the drawing application and the server-client chat.",
+                "type": "video"
+              }
+            ]
+          },
+          {
+            "title": "EIiA – Grading via Random System",
+            "description": "As part of the 'Development Tools for Multimedia Systems' module, the web application 'GambleTheMark' was created. The goal was to automate grade assignment based on subjective factors using a weighted random algorithm. A wireframe (Miro), a design prototype (Figma) and an interactive click dummy (Nordcraft) were developed.",
+            "images": [
+              {
+                "src": "fourth_sem/eiia/Concept.png",
+                "alt": "Wireframe Overview",
+                "title": "Miro Wireframes",
+                "description": "Conceptual layout of all pages with navigation and interactions."
               },
               {
-                "src": "third_sem/MMI/Storyboard/Image4Render.png", 
-                "alt": "Storyboard 4",
-                "title": "Scene 4 - Turning Point",
-                "description": "Dramatic turn with visual effects"
+                "src": "fourth_sem/eiia/Figma.png",
+                "alt": "High-Fidelity Design",
+                "title": "Figma Prototype",
+                "description": "Design system with typography, color, UI components and sample views."
               },
               {
-                "src": "third_sem/MMI/Storyboard/Image5Render.png", 
-                "alt": "Storyboard 5",
-                "title": "Scene 5 - Resolution",
-                "description": "Resolution with adaptive storytelling"
+                "src": "fourth_sem/eiia/Nordcraft.png",
+                "alt": "Nordcraft Implementation",
+                "title": "Interactive Prototype",
+                "description": "Initial functional prototype built in Nordcraft."
               },
               {
-                "src": "third_sem/MMI/Storyboard/Image6Render.png", 
-                "alt": "Storyboard 6",
-                "title": "Finale",
-                "description": "Different endings based on user decisions"
+                "src": "../video/GambleTheMarkDemo.mp4",
+                "alt": "GambleTheMark Demo",
+                "title": "Demo Video",
+                "description": "Demonstration of the implemented application in Nordcraft.",
+                "type": "video"
+              }
+            ]
+          },
+          {
+            "title": "Annual Calendar PWA",
+            "description": "In the module 'Internet Technologies I', I developed a progressive web app that displays an interactive annual calendar for the federal state of Saxony. The app dynamically calculates holidays, displays calendar weeks according to ISO 8601, and can be installed on devices as a PWA. In addition to various views (year, month, mobile), I paid special attention to UI/UX.",
+            "images": [
+              {
+                "src": "fourth_sem/it1/Page-2025.png",
+                "alt": "Calendar Page 2025",
+                "title": "Current Year",
+                "description": "Display of the current year with marked today and holidays."
+              },
+              {
+                "src": "fourth_sem/it1/SelectDate.png",
+                "alt": "Year Selection Topbar",
+                "title": "Year Selection",
+                "description": "Dropdown selection for calendar years with optional month focus."
+              },
+              {
+                "src": "fourth_sem/it1/Page-2002.png",
+                "alt": "Calendar Page 2002",
+                "title": "Example Year 2002",
+                "description": "Display of past years with dynamically calculated holidays."
+              },
+              {
+                "src": "fourth_sem/it1/Information.png",
+                "alt": "Calendar Color Legend",
+                "title": "Color Coding",
+                "description": "Legend distinguishing dynamic and static holidays and calendar structure."
+              },
+              {
+                "src": "fourth_sem/it1/MobileView.png",
+                "alt": "Mobile Calendar View",
+                "title": "Mobile View",
+                "description": "Responsive design on a mobile device with focus on current month."
+              },
+              {
+                "src": "fourth_sem/it1/TabletView.png",
+                "alt": "Tablet View of PWA",
+                "title": "Tablet View",
+                "description": "Tablet mode with monthly overview and navigation."
+              }
+            ]
+          },
+          {
+            "title": "Eventify – Event Management System",
+            "description": "In the Software Engineering 2 module during the 4th semester, we implemented the project we had conceptualized in the 3rd semester. I was responsible for team coordination, backend development and project management to ensure a complete, functional and timely submission. I was regularly present, engaged and one of the few consistent contributors. Still, my professor gave me a 1.7, even though I was one point short of a 1.3 – despite me asking several times if a higher grade was possible...",
+            "images": [
+              {
+                "src": "fourth_sem/se/Home.png",
+                "alt": "Homepage",
+                "title": "Homepage",
+                "description": "Landing page prompting event creation and showing upcoming events."
+              },
+              {
+                "src": "fourth_sem/se/CreateEvent.png",
+                "alt": "Create Event",
+                "title": "Create Event",
+                "description": "Input form for a new event with all relevant data fields."
+              },
+              {
+                "src": "fourth_sem/se/Events.png",
+                "alt": "Event Overview",
+                "title": "All Events",
+                "description": "List of all created events with filtering and details."
+              },
+              {
+                "src": "fourth_sem/se/Tickets.png",
+                "alt": "Reserved Tickets",
+                "title": "Your Tickets",
+                "description": "Overview of your tickets with cancellation option."
+              }
+            ]
+          },
+          {
+            "title": "Short Film – Media Production",
+            "description": "In the Media Production module, we produced a complete short film using the techniques we learned – including 5.1 surround sound and Blu-ray mastering. The focus was on the interplay between image and sound within professional production workflows.",
+            "images": [
+              {
+                "src": "https://www.youtube-nocookie.com/embed/nZJPLtZSLCs?si=pqhQ8Pqrgfz6paNt",
+                "alt": "Short Film Media Production",
+                "title": "Film Demo",
+                "description": "Excerpt from the produced short film with surround sound and postproduction.",
+                "type": "youtube"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "work-blayze",
+        "title": "Work at Blayze Games",
+        "description": "From August 2021 to December 2022, I was part of the support and QA team at Blayze Games. I handled community communication, tested new builds and documented bugs. In addition to my technical role, I also created store graphics for Google Play and the App Store, event renders for social media and custom skins for the game – even beyond my active time.",
+        "folders": [
+          {
+            "title": "Forward Assault – Store Page Visuals",
+            "description": "During my time at Blayze Games, I was tasked with completely overhauling the store graphics for Google Play and the Apple App Store. The goal was to deliver visually appealing and thematically consistent images that clearly highlight gameplay, modes, map variety and skins. This was the result.",
+            "images": [
+              {
+                "src": "other_projects/ForwardAssault/Store_page/FINAL Main Picture.png",
+                "alt": "Main image with two soldiers",
+                "title": "Main Visual",
+                "description": "Key image for the store page – focus on characters and weapons."
+              },
+              {
+                "src": "other_projects/ForwardAssault/Store_page/Store-BD-Final.png",
+                "alt": "Bomb Defuse",
+                "title": "Bomb Defuse",
+                "description": "Visual for the bomb defuse mode – typical game scenario."
+              },
+              {
+                "src": "other_projects/ForwardAssault/Store_page/Store-Combat-Final.png",
+                "alt": "Team Combat",
+                "title": "Combat",
+                "description": "Depiction of intense team battles on a realistic map."
+              },
+              {
+                "src": "other_projects/ForwardAssault/Store_page/Store-Maos-Final.png",
+                "alt": "Various Maps",
+                "title": "Maps",
+                "description": "Collage of multiple maps – emphasis on visual variety."
+              },
+              {
+                "src": "other_projects/ForwardAssault/Store_page/Store-modes-Final.png",
+                "alt": "Game Modes",
+                "title": "Gamemodes",
+                "description": "Illustration of different game modes – from TDM to Bomb Defuse."
+              },
+              {
+                "src": "other_projects/ForwardAssault/Store_page/Store-Skins-Final.png",
+                "alt": "Weapon Skins",
+                "title": "Skins",
+                "description": "Focus on cosmetic variety – skins for knives, rifles and pistols."
+              },
+              {
+                "src": "other_projects/ForwardAssault/Store_page/Store-stdm-Final.png",
+                "alt": "Sniper Team Deathmatch",
+                "title": "Sniper TDM",
+                "description": "Visual for sniper mode – precision gameplay in focus."
+              },
+              {
+                "src": "other_projects/ForwardAssault/Store_page/Store-tdm-Final.png",
+                "alt": "Team Deathmatch",
+                "title": "TDM",
+                "description": "Standard team deathmatch scene with typical game environment."
+              }
+            ]
+          },
+          {
+            "title": "Forward Assault – Event Renders",
+            "description": "During my time at Blayze Games, I was also responsible for visual content related to community events. These renders were created for special occasions like Halloween, New Year's or winter events and were used on social media and in-game.",
+            "images": [
+              {
+                "src": "other_projects/ForwardAssault/event_render/Halloween banner.png",
+                "alt": "Halloween Render",
+                "title": "Halloween Event",
+                "description": "Render for the Halloween community event, matching the dark atmosphere."
+              },
+              {
+                "src": "other_projects/ForwardAssault/event_render/NewZear2.1.png",
+                "alt": "New Year's",
+                "title": "New Year's Greeting",
+                "description": "New Year’s render with fireworks and characters celebrating the turn of the year."
+              },
+              {
+                "src": "other_projects/ForwardAssault/event_render/RushEsportTeaser .png",
+                "alt": "Team Render",
+                "title": "Skin Showcase",
+                "description": "Character render with custom-designed skins for an eSport teaser event."
+              },
+              {
+                "src": "other_projects/ForwardAssault/event_render/SnowFun10mb.png",
+                "alt": "Christmas Render",
+                "title": "Winter Event",
+                "description": "Sledding scene as a humorous contribution to the winter event – with snow particles and Santa hats."
+              }
+            ]
+          },
+          {
+            "title": "Forward Assault – Skins",
+            "description": "After my active time at Blayze Games, I continued to design additional skins in my free time – from gloves to knives. Some of these designs were later added to the game. Here’s a selection of that work.",
+            "images": [
+              {
+                "src": "other_projects/ForwardAssault/skins/Offer.png",
+                "alt": "Skin Offer Overview",
+                "title": "Skin Offer Overview",
+                "description": "Visual overview of all designed skins with glove and Beretta unlocks."
+              },
+              {
+                "src": "other_projects/ForwardAssault/skins/Blossom_Product_Render.gif",
+                "alt": "Blossom Skin Animation",
+                "title": "Blossom",
+                "description": "Animated product render of the Blossom knife with floral texture."
+              },
+              {
+                "src": "other_projects/ForwardAssault/skins/redBlue_Product.gif",
+                "alt": "Red Blue Skin Animation",
+                "title": "Red Blue",
+                "description": "GIF render of the two-tone Red Blue skin – glitchy aesthetic included."
+              },
+              {
+                "src": "other_projects/ForwardAssault/skins/Webbed_Product.gif",
+                "alt": "Webbed Skin",
+                "title": "Webbed (GIF 1)",
+                "description": "Second GIF preview of the Webbed skin."
+              },
+              {
+                "src": "other_projects/ForwardAssault/skins/Webbed_PR.gif",
+                "alt": "Webbed Skin",
+                "title": "Webbed (GIF 2)",
+                "description": "First animated product render of the Webbed skin."
+              },
+              {
+                "src": "other_projects/ForwardAssault/skins/RIP2_PR.gif",
+                "alt": "RIP II Skin Animation",
+                "title": "RIP II",
+                "description": "GIF preview of the RIP II skin – aggressive red-black theme."
+              }
+            ]
+          },
+          {
+            "title": "Bullet Force – Character Renders",
+            "description": "For the game Bullet Force, I created several renders of the new playable character models. The goal was to showcase the models in various poses with proper lighting setups. These renders were used in marketing materials and for presentation purposes.",
+            "images": [
+              {
+                "src": "other_projects/BulletForce/Renders/NewUS_R1.png",
+                "alt": "US Soldier with M4",
+                "title": "US – Rifle",
+                "description": "Render of a US soldier with assault rifle – focus on gear details and aiming pose."
+              },
+              {
+                "src": "other_projects/BulletForce/Renders/NewUS_R3.png",
+                "alt": "US Soldier with Pistol",
+                "title": "US – Pistol",
+                "description": "Render of the US soldier with drawn pistol – highlighting alternate weapon loadout."
+              },
+              {
+                "src": "other_projects/BulletForce/Renders/RU_P1.png",
+                "alt": "Russian Soldier Front View",
+                "title": "RU – Front View",
+                "description": "Frontal render of a Russian soldier with AK – realistic pose and lighting."
+              },
+              {
+                "src": "other_projects/BulletForce/Renders/RU_P2.png",
+                "alt": "Russian Soldier Rear View",
+                "title": "RU – Rear View",
+                "description": "Rear render of the Russian character showing equipment and back detail."
+              }
+            ]
+          },
+          {
+            "title": "Bullet Force – Steam Page Visuals",
+            "description": "For the planned update of the Steam presence of Bullet Force, I created new graphics. The goal was to establish a modern and consistent visual concept for the various display formats within the Steam library.",
+            "images": [
+              {
+                "src": "other_projects/BulletForce/Steam/Library_Capsule.png",
+                "alt": "Steam Capsule",
+                "title": "Library Capsule",
+                "description": "Capsule graphic for compact view in the Steam library – dark background with strong character silhouette."
+              },
+              {
+                "src": "other_projects/BulletForce/Steam/Library_Header.png",
+                "alt": "Steam Header",
+                "title": "Library Header",
+                "description": "Horizontal banner for the Steam library – character pose in red light with weapon focus."
+              },
+              {
+                "src": "other_projects/BulletForce/Steam/Library_Hero.png",
+                "alt": "Steam Hero",
+                "title": "Library Hero",
+                "description": "Main graphic for the Steam page – atmospheric render with US character model in combat pose."
               }
             ]
           }
         ]
       }
-    }
+    ]
+
   },
   "footer": {
     "copyright": "© 2025 Gustav Schwarzbach. All rights reserved.",
     "links": [
-      {"name": "Privacy", "href": "#privacy"},
-      {"name": "Imprint", "href": "#imprint"}
+      { "name": "Privacy", "href": "#privacy" },
+      { "name": "Imprint", "href": "#imprint" }
     ]
   }
-} 
+}
