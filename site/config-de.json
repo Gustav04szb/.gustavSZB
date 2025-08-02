@@ -1,0 +1,670 @@
+{
+  "site": {
+    "title": "Gustav Schwarzbach",
+    "description": "Digitales Portfolio von Gustav Schwarzbach - Medieninformatik-Student mit Projekten in Spieledesign, UI und Programmierung.",
+    "author": "Gustav Schwarzbach",
+    "url": "https://gustavszb.com/",
+    "email": "me@gustavSZB.com"
+  },
+  "contact": {
+    "linkedin": "https://www.linkedin.com/in/gustavszb/",
+    "github": "https://github.com/Gustav04szb",
+    "discord": "https://discord.gg/mYGdMyu5",
+    "email": "mailto:me@gustavSZB.com"
+  },
+  "content": {
+    "hero": {
+      "title": "Gustav Schwarzbach",
+      "subtitle": "Medieninformatik-Student",
+      "description": [
+        "Ich bin Gustav Schwarzbach, Medieninformatik-Student im 5. Semester an der HTW Dresden – technikaffin, kreativ und neugierig. Technik und Kreativität zu verbinden reizt mich besonders – ob in Spielen, Animation oder Design.",
+        "In den letzten Jahren habe ich praktische Erfahrungen in der Softwareentwicklung und im Design gesammelt – von Java, C++ und C# über .NET und Processing bis hin zu UI-Design und 3D-Modellierung. Zurzeit hat es mir vor allem Blender angetan – hier liegt mein Schwerpunkt auf 3D-Animation.",
+        "Als offener, hilfsbereiter Mensch arbeite ich gerne im Team und tauche tief in Projekte ein, die mich begeistern. Auf dieser Website präsentiere ich einige meiner Projekte – schau dich gerne um und lass dich inspirieren. Vielleicht entsteht daraus ja eine spannende Zusammenarbeit."
+      ],
+      "buttons": {
+        "view_projects": "Projekte ansehen",
+        "get_in_touch": "Kontakt aufnehmen"
+      }
+    },
+    "navigation": [
+      {"name": "Start", "href": "#home"},
+      {"name": "Über mich", "href": "#about"},
+      {"name": "Projekte", "href": "#projects"},
+      {"name": "Kontakt", "href": "#contact"}
+    ],
+    "sections": {
+      "about": {
+        "title": "Über mich",
+        "description": "Ich arbeite gerne an Projekten, bei denen Technik auf Gestaltung trifft. Dabei interessieren mich vor allem Spielmechaniken, visuelles Storytelling und digitale Ausdrucksformen – von Benutzeroberflächen bis zu 3D-Animationen.",
+        "skills": [
+          {
+            "title": "Programmierung",
+            "description": "Java, C, C++, C#, .NET, Processing"
+          },
+          {
+            "title": "Design",
+            "description": "UI/UX, visuelles Storytelling, 3D-Modellierung und -Texturierung"
+          },
+          {
+            "title": "Tools",
+            "description": "Blender, Photoshop, Illustrator, Premiere Pro, Visual Studio, IntelliJ, WebStorm, Rider"
+          },
+          {
+            "title": "Arbeitsweise",
+            "description": "neugierig, eigenständig, teamfähig"
+          }
+        ]
+      },
+      "projects": {
+        "title": "Projekte"
+      },
+        "contact": {
+          "title": "Lass uns vernetzen",
+          "description": "Ich freue mich über Austausch, gemeinsame Projekte oder eine Zusammenarbeit – ob im Bereich Spiele, Design oder Technik. Schreib mir gerne, wenn du eine Idee hast oder einfach neugierig bist."
+        }
+    },
+    "projects": [
+      {
+        "id": "Sem-one-three",
+        "title": "Semester 1 bis 3",
+        "description": "Einblicke in meine Studienanfänge – von den ersten Programmierprojekten bis hin zu interaktiven Anwendungen, UI-Konzepten und ersten Spielen.",
+        "folders": [
+          {
+            "title": "Grundlagen der Gestaltung",
+            "description": "Gestaltungsbeleg zum Thema Layout, Typografie und Struktur. Aufgabe war es, basierend auf erlernten Designprinzipien eine fiktive Website oder Broschüre zu entwickeln. Ich habe eine komplette Webdarstellung für eine imaginäre Schokoladenfirma in Adobe InDesign gestaltet.",
+            "images": [
+              {
+                "src": "first_sem/Beleg.png",
+                "alt": "Startseite Cocoa Schoki",
+                "title": "Homepage",
+                "description": "Titelseite mit Betonung auf Text-Bild-Hierarchie und klarer Gestaltung nach typografischen Regeln."
+              },
+              {
+                "src": "first_sem/Beleg2.png",
+                "alt": "Produktübersicht Cocoa Schoki",
+                "title": "Store (Übersicht)",
+                "description": "Produktdarstellung mit Bewertungssystem und CTA-Buttons, layoutet in InDesign mit Schnittmarken."
+              },
+              {
+                "src": "first_sem/Beleg3.png",
+                "alt": "Kontaktseite Cocoa Schoki",
+                "title": "Kontakt",
+                "description": "Kontaktformular mit strukturierter Aufteilung und visueller Konsistenz."
+              },
+              {
+                "src": "first_sem/Beleg4.png",
+                "alt": "Impressum Cocoa Schoki",
+                "title": "Impressum",
+                "description": "Gestaltung einer vollständigen rechtlichen Seite inklusive typografischer Abstimmung."
+              },
+              {
+                "src": "first_sem/Beleg5.png",
+                "alt": "Storeansicht groß Cocoa Schoki",
+                "title": "Produktpräsentation",
+                "description": "Fokussierte Produktdarstellung mit visueller Balance zwischen Bild, Preis und Text."
+              }
+            ]
+          },
+          {
+            "title": "GIO Projekte",
+            "description": "Im Modul Gestaltung Interaktiver Oberflächen (GIO) bestand die Aufgabe darin, bestehende Webauftritte kritisch zu analysieren und im Hinblick auf Struktur, Design und Benutzerführung neu zu gestalten oder gezielt zu erweitern.",
+            "images": [
+              {
+                "src": "second_sem/GIO/JK_Forum.png",
+                "alt": "Forum Jonas Kaufmann",
+                "title": "Forum Jonas Kaufmann",
+                "description": "Erweiterung einer bestehenden Künstlerseite um ein Fan-Forum. Umsetzung der Prinzipien Organisation & Struktur sowie Modul & Programm anhand klarer Trennung von Inhalt und Interaktion."
+              },
+              {
+                "src": "second_sem/GIO/GS.png",
+                "alt": "Redesign Günter Schulte",
+                "title": "Startseite Günter Schulte",
+                "description": "Neugestaltung der Titelseite eines Künstlerportfolios mit Fokus auf Eleganz & Einfachheit sowie Proportion & Kontrast. Ziel war eine ausdrucksstarke, visuell reduzierte Darstellung."
+              },
+              {
+                "src": "second_sem/GIO/Wehlen@2x.png",
+                "alt": "Redesign Stadt Wehlen",
+                "title": "Website Stadt Wehlen",
+                "description": "Kompletter Neuaufbau einer veralteten Stadtseite nach den 4+1 Gestaltungsregeln (Nähe, Ausrichtung, Wiederholung, Kontrast und Blickfang)."
+              },
+              {
+                "src": "second_sem/GIO/NFS_Beleg.png",
+                "alt": "Natur trifft Stadt",
+                "title": "Natur findet Stadt",
+                "description": "Eigenständiger Entwurf für ein Umweltprojekt der Stadt Dresden. Gestaltung nach allen Prinzipien der Kommunikationsgestaltung mit und ohne Einsatz von KI-Tools."
+              }
+            ]
+          },
+          {
+            "title": "4 Gewinnt in C++",
+            "description": "Im Rahmen des Moduls Programmierung II habe ich ein voll funktionsfähiges 4-Gewinnt-Spiel in C++ entwickelt. Der Fokus lag auf Objektorientierung, Benutzerführung und stabiler Spiellogik. Neben einem strukturierten Menü und einem Tutorial entstand ein grafischer Mehrspielermodus. Eine kurze Demo zeigt den Ablauf im Spiel.",
+            "images": [
+              {
+                "src": "second_sem/prog/Menu.png",
+                "alt": "Spielmenü",
+                "title": "Hauptmenü",
+                "description": "Modernes Spielmenü mit Navigation und grundlegenden Einstellungen."
+              },
+              {
+                "src": "second_sem/prog/Instructions.png",
+                "alt": "Spielanleitung",
+                "title": "Tutorial System",
+                "description": "Visuelle Anleitung mit Erklärung der Regeln und Steuerung."
+              },
+              {
+                "src": "second_sem/prog/Multiplayer.png",
+                "alt": "Mehrspieler Modus",
+                "title": "Mehrspieler",
+                "description": "Spielszene im lokalen Mehrspielermodus mit Zugverlauf."
+              },
+              {
+                "src": "../video/ConnectFourDemo.mp4",
+                "title": "Gameplay-Demo",
+                "alt": "Video Demo",
+                "description": "Kurze Videoaufnahme einer Spielrunde mit typischen Interaktionen.",
+                "type": "video"
+              }
+            ]
+          },
+          {
+            "title": "HandBird – Multimodales Java-Spiel",
+            "description": "Im Modul 'Multimodale Mensch-Maschine-Interaktion' entwickelten wir ein Spiel in Java mit der Processing-Bibliothek. Gesteuert wird es über Handbewegung, Spracheingabe oder Maus (nur im Menü). Ziel war es, verschiedene Interaktionsformen technisch umzusetzen. Unsere Lösung: ein Flappy-Bird-inspiriertes Spiel mit Hand-Tracking per Kamera.",
+            "images": [
+              {
+                "src": "third_sem/MMI/HandBirdMenu.png",
+                "alt": "HandBird Menü",
+                "title": "Hauptmenü",
+                "description": "Startbildschirm mit Kamera-Integration und Gestenerkennung."
+              },
+              {
+                "src": "third_sem/MMI/HandBirdPlaying.png",
+                "alt": "HandBird Spielen",
+                "title": "Gameplay",
+                "description": "Flug durch Hindernisse, gesteuert per Handbewegung über Kamera."
+              },
+              {
+                "src": "third_sem/MMI/HandBirdGameOver.png",
+                "alt": "HandBird Game Over",
+                "title": "Spielende",
+                "description": "Game-Over-Szene mit Anzeige von Score und Highscore."
+              },
+              {
+                "src": "../video/HandBirdDemo.mp4",
+                "alt": "HandBird Gameplay Demo",
+                "title": "Gameplay-Demo",
+                "description": "Kurze Video-Demo des Spiels mit Live-Handsteuerung.",
+                "type": "video"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Sem-four-six",
+        "title": "Semester 4 bis 6",
+        "description": "Vertiefende Projekte mit Fokus auf Softwarearchitektur, 3D-Grafik, Webtechnologien und multimodaler Interaktion. Neben C#/.NET stehen komplexe Anwendungen in Bereichen wie Computergrafik, Audio-/Videoverarbeitung und interaktive Systeme bevor.",
+        "folders": [
+          {
+            "title": "Computer Grafik",
+            "description": "Im Modul Computergrafik habe ich einen umfangreichen Beleg zur Rekonstruktion eines historischen Gebäudes auf Basis von Denkmalschutz-Bauplänen umgesetzt. Ergänzend wurden im Praktikum grundlegende 3D-Modellier- und Texturierungstechniken anhand kleinerer Übungsprojekte (Würfel, Schild, Tempel und weiter) vermittelt.",
+            "images": [
+              {
+                "src": "fourth_sem/cg/BelegRender1png.png",
+                "alt": "Gebäudereko außen",
+                "title": "Gebäuderekonstruktion außen",
+                "description": "Teil der 3D-Rekonstruktion eines denkmalgeschützten Gebäudes aus Sachsen. Modell basiert auf historischen Bauplänen."
+              },
+              {
+                "src": "fourth_sem/cg/BelegRender2png.png",
+                "alt": "Gebäudereko innen",
+                "title": "Gebäuderekonstruktion innen",
+                "description": "Innenstruktur des rekonstruierten Gebäudes. Projektumfang war sehr groß und wurde nicht vollständig abgeschlossen."
+              },
+              {
+                "src": "fourth_sem/cg/Shield-Sword.png",
+                "alt": "Gerendertes Schild",
+                "title": "Renderschild",
+                "description": "Übung zur Modellierung, UV-Unwrap und Materialgestaltung eines Schildes mit Emblem und Schwert."
+              },
+              {
+                "src": "fourth_sem/cg/Shield-SwordWire.png",
+                "alt": "Schild Wireframe",
+                "title": "Wireframe des Schilds",
+                "description": "Darstellung des Modells im Wireframe-Modus zur Analyse der Geometrie."
+              },
+              {
+                "src": "fourth_sem/cg/Tempel.png",
+                "alt": "Tempel Frontansicht",
+                "title": "Tempelmodell",
+                "description": "Übungsprojekt zum Aufbau klassischer Architekturformen und Einsatz von Proportionen."
+              },
+              {
+                "src": "fourth_sem/cg/Tempel2.png",
+                "alt": "Tempel Säulen",
+                "title": "Tempeldetails",
+                "description": "Nahaufnahme der Tempelsäulen mit Fokus auf Materialität und Struktur."
+              },
+              {
+                "src": "fourth_sem/cg/WuerfelGlas_Render2.png",
+                "alt": "Würfelglas",
+                "title": "Würfel im Glas",
+                "description": "Szene zur Übung von Glas-, Transparenz- und Shader-Eigenschaften mit animiertem Würfelwurf."
+              },
+              {
+                "src": "fourth_sem/cg/WuerfelGlas_Render3.png",
+                "alt": "Würfel Close-up",
+                "title": "Würfel Nahaufnahme",
+                "description": "Detaildarstellung mit Fokus auf Lichtbrechung, Reflektion und Materialeinstellungen."
+              }
+            ]
+          },
+          {
+            "title": "C# & .NET",
+            "description": "Im Rahmen des Wahlpflichtmoduls habe ich verschiedene Aufgaben bearbeitet, um die Grundlagen von C# und dem .NET-Framework zu erlernen. Gezeigt werden zwei ausgewählte Projekte: ein eigenes Zeichenprogramm sowie ein Chat-System mit Server-Client-Kommunikation über Sockets.",
+            "images": [
+              {
+                "src": "fourth_sem/csharp/DrawingApplication.png",
+                "alt": "Zeichenprogramm",
+                "title": "Eigenes Zeichenprogramm",
+                "description": "Ein Mini-Malprogramm mit Zeichenwerkzeugen, Farbwahl, Linienarten und Textfunktion."
+              },
+              {
+                "src": "fourth_sem/csharp/Server-Client.png",
+                "alt": "Chat Client & Server",
+                "title": "Server-Client-Chat",
+                "description": "Ein per Socket-Verbindung umgesetzter Mehrbenutzer-Chat mit Serversteuerung."
+              },
+              {
+                "src": "../video/csDemo.mp4",
+                "alt": "Demo: Zeichenprogramm & Chat",
+                "title": "C# Projekt-Demo",
+                "description": "Kurze Videopräsentation des Zeichenprogramms und des Server-Client-Chats.",
+                "type": "video"
+              }
+            ]
+          },
+          {
+            "title": "EIiA – Bewertung per Zufallssystem",
+            "description": "Im Rahmen des Moduls 'Entwicklungswerkzeuge für multimediale Systeme' entstand die Webanwendung 'GambleTheMark'. Ziel war die Automatisierung der Notenvergabe auf Basis subjektiver Faktoren durch einen gewichteten Zufallsalgorithmus. Im Verlauf wurden ein Wireframe in Miro, ein Designprototyp in Figma sowie ein interaktiver Click-Dummy in Nordcraft erstellt.",
+            "images": [
+              {
+                "src": "fourth_sem/eiia/Concept.png",
+                "alt": "Wireframe Übersicht",
+                "title": "Miro Wireframes",
+                "description": "Konzeptionelle Darstellung aller Seiten mit Navigation und Interaktionen."
+              },
+              {
+                "src": "fourth_sem/eiia/Figma.png",
+                "alt": "High-Fidelity Design",
+                "title": "Figma Prototyp",
+                "description": "Designsystem mit Schrift, Farbe, UI-Komponenten und Beispielansichten."
+              },
+              {
+                "src": "fourth_sem/eiia/Nordcraft.png",
+                "alt": "Nordcraft Umsetzung",
+                "title": "Interaktive Umsetzung",
+                "description": "Erste funktionale Umsetzung als Prototyp in Nordcraft."
+              },
+              {
+                "src": "../video/GambleTheMarkDemo.mp4",
+                "alt": "GambleTheMark Demo",
+                "title": "Demo-Video",
+                "description": "Demonstration der implementierten Anwendung in Nordcraft.",
+                "type": "video"
+              }
+            ]
+          },
+          {
+            "title": "Jahreskalender PWA",
+            "description": "Im Modul Internet-Technologien I habe ich eine Progressive Web App entwickelt, die einen interaktiven Jahreskalender für das Bundesland Sachsen darstellt. Die App berechnet dynamisch Feiertage, zeigt Kalenderwochen nach ISO 8601 und lässt sich auf Geräten als PWA installieren. Neben verschiedenen Ansichten (Jahr, Monat, Mobile) habe ich besonderes Augenmerk auf UI/UX gelegt.",
+            "images": [
+              {
+                "src": "fourth_sem/it1/Page-2025.png",
+                "alt": "Kalenderseite 2025",
+                "title": "Aktuelles Jahr",
+                "description": "Darstellung des aktuellen Jahres mit markiertem heutigem Tag und Feiertagen."
+              },
+              {
+                "src": "fourth_sem/it1/SelectDate.png",
+                "alt": "Jahresauswahl Topbar",
+                "title": "Jahresauswahl",
+                "description": "Dropdown-Auswahl für Kalenderjahre mit optionalem Monatsfokus."
+              },
+              {
+                "src": "fourth_sem/it1/Page-2002.png",
+                "alt": "Kalenderseite 2002",
+                "title": "Beispieljahr 2002",
+                "description": "Darstellung vergangener Jahre mit dynamisch berechneten Feiertagen."
+              },
+              {
+                "src": "fourth_sem/it1/Information.png",
+                "alt": "Legende der Kalenderfarben",
+                "title": "Farbkodierung",
+                "description": "Legende zur Unterscheidung dynamischer und statischer Feiertage sowie Kalenderstruktur."
+              },
+              {
+                "src": "fourth_sem/it1/MobileView.png",
+                "alt": "Mobile Ansicht Kalender",
+                "title": "Mobile Ansicht",
+                "description": "Responsives Design auf einem Mobilgerät mit Fokus auf aktuellen Monat."
+              },
+              {
+                "src": "fourth_sem/it1/TabletView.png",
+                "alt": "Tabletansicht der PWA",
+                "title": "Tablet-Ansicht",
+                "description": "Ansicht im Tablet-Modus mit Monatsübersicht und Navigation."
+              }
+            ]
+          },
+          {
+            "title": "Eventify – Eventverwaltungssystem",
+            "description": "Im Modul Software Engineering 2 im 4. Semester haben wir das Projekt umgesetzt, das wir im 3. Semester entwickelt hatten. Ich habe in diesem Projekt viel an der Koordination im Team gearbeitet und das Backend sowie die Projektverwaltung übernommen, damit alles zur Abgabe zusammenkommt, funktioniert und korrekt ist. Ich war in den Vorlesungen immer anwesend, habe aktiv mitgearbeitet und war einer der wenigen, die konstant dabei waren. Trotzdem meint mein Professor mir eine 1,7 zu geben, obwohl nur 1 Punkt zur 1,3 gefehlt hat – obwohl ich ihn mehrmals darauf angesprochen habe, ob es nicht möglich wäre.....",
+            "images": [
+              {
+                "src": "fourth_sem/se/Home.png",
+                "alt": "Startseite",
+                "title": "Startseite",
+                "description": "Landingpage mit Aufruf zur Eventerstellung und Vorschau auf kommende Events."
+              },
+              {
+                "src": "fourth_sem/se/CreateEvent.png",
+                "alt": "Event erstellen",
+                "title": "Event erstellen",
+                "description": "Eingabemaske für ein neues Event mit allen relevanten Datenfeldern."
+              },
+              {
+                "src": "fourth_sem/se/Events.png",
+                "alt": "Eventübersicht",
+                "title": "Alle Events",
+                "description": "Liste aller angelegten Events mit Filtermöglichkeit und Detailinfos."
+              },
+              {
+                "src": "fourth_sem/se/Tickets.png",
+                "alt": "Reservierte Tickets",
+                "title": "Deine Tickets",
+                "description": "Übersicht der eigenen Tickets mit Option zur Stornierung."
+              }
+            ]
+          },
+          {
+            "title": "Kurzfilm – Medienproduktion",
+            "description": "Im Modul Medienproduktion haben wir mit den erlernten Techniken einen vollständigen Kurzfilm produziert, inklusive 5.1 Surround-Sound und Blu-ray-Mastering. Der Fokus lag auf der Umsetzung von Bild und Ton im Zusammenspiel mit professionellen Produktions-Workflows.",
+            "images": [
+              {
+                "src": "https://www.youtube-nocookie.com/embed/nZJPLtZSLCs?si=pqhQ8Pqrgfz6paNt",
+                "alt": "Kurzfilm Medienproduktion",
+                "title": "Film-Demo",
+                "description": "Ausschnitt aus dem produzierten Kurzfilm mit Mehrkanal-Ton und Postproduktion.",
+                "type": "youtube"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "work-blayze",
+        "title": "Arbeit bei Blayze Games",
+        "description": "Von August 2021 bis Dezember 2022 war ich Teil des Support- und QA-Teams bei Blayze Games. Dort kümmerte ich mich um die Kommunikation mit der Community, testete neue Builds und dokumentierte Fehler. Neben meiner technischen Rolle erstellte ich auch Store-Grafiken für Google Play und den App Store, Event-Render für Social Media sowie eigene Skins fürs Spiel – auch über meine aktive Zeit hinaus.",
+        "folders": [
+          {
+            "title": "Forward Assault – Store Page Visuals",
+            "description": "Während meiner Zeit bei Blayze Games wurde ich damit beauftragt, die Store-Grafiken für den Google Play Store und den Apple App Store grundlegend zu überarbeiten. Ziel war es, visuell ansprechende und thematisch konsistente Bilder zu liefern, die Gameplay, Modi, Kartenvielfalt und Skins klar hervorheben. Das hier war das Ergebnis.",
+            "images": [
+              {
+                "src": "other_projects/ForwardAssault/Store_page/FINAL Main Picture.png",
+                "alt": "Startbild mit zwei Soldaten",
+                "title": "Main Visual",
+                "description": "Zentrale Darstellung für die Store-Seite – Fokus auf Charaktere und Waffen."
+              },
+              {
+                "src": "other_projects/ForwardAssault/Store_page/Store-BD-Final.png",
+                "alt": "Bombenentschärfung",
+                "title": "Bomb Defuse",
+                "description": "Visual für den Bombenentschärfungsmodus – typische Spielsituation."
+              },
+              {
+                "src": "other_projects/ForwardAssault/Store_page/Store-Combat-Final.png",
+                "alt": "Teamkampf",
+                "title": "Combat",
+                "description": "Darstellung intensiver Teamgefechte auf realistischer Karte."
+              },
+              {
+                "src": "other_projects/ForwardAssault/Store_page/Store-Maos-Final.png",
+                "alt": "Verschiedene Karten",
+                "title": "Maps",
+                "description": "Collage mit mehreren Karten – Betonung der visuellen Vielfalt."
+              },
+              {
+                "src": "other_projects/ForwardAssault/Store_page/Store-modes-Final.png",
+                "alt": "Spielmodi",
+                "title": "Gamemodes",
+                "description": "Illustration unterschiedlicher Spielmodi – von TDM bis Bomb Defuse."
+              },
+              {
+                "src": "other_projects/ForwardAssault/Store_page/Store-Skins-Final.png",
+                "alt": "Waffenskins",
+                "title": "Skins",
+                "description": "Fokus auf kosmetische Vielfalt – Skins für Messer, Gewehre und Pistolen."
+              },
+              {
+                "src": "other_projects/ForwardAssault/Store_page/Store-stdm-Final.png",
+                "alt": "Sniper Team Deathmatch",
+                "title": "Sniper TDM",
+                "description": "Visual für den Scharfschützen-Modus – präzises Gameplay im Fokus."
+              },
+              {
+                "src": "other_projects/ForwardAssault/Store_page/Store-tdm-Final.png",
+                "alt": "Team Deathmatch",
+                "title": "TDM",
+                "description": "Standard Team-Deathmatch-Szene mit typischer Spielumgebung."
+              }
+            ]
+          },
+          {
+            "title": "Forward Assault – Event Render",
+            "description": "Während meiner Zeit bei Blayze Games war ich auch für visuelle Inhalte rund um Community-Events verantwortlich. Diese Render wurden für besondere Anlässe wie Halloween, Neujahr oder Winteraktionen erstellt und auf Social Media sowie ingame verwendet.",
+            "images": [
+              {
+                "src": "other_projects/ForwardAssault/event_render/Halloween banner.png",
+                "alt": "Halloween Render",
+                "title": "Halloween Event",
+                "description": "Render für das Halloween-Community-Event, passend zur düsteren Stimmung."
+              },
+              {
+                "src": "other_projects/ForwardAssault/event_render/NewZear2.1.png",
+                "alt": "Neujahr",
+                "title": "Neujahrsgruß",
+                "description": "Silvester-Render mit Feuerwerk und Charakteren zum Jahreswechsel."
+              },
+              {
+                "src": "other_projects/ForwardAssault/event_render/RushEsportTeaser .png",
+                "alt": "Teamrender",
+                "title": "Skin Showcase",
+                "description": "Charakter-Render mit eigens gestalteten Skins für ein eSport-Teaser-Event."
+              },
+              {
+                "src": "other_projects/ForwardAssault/event_render/SnowFun10mb.png",
+                "alt": "Weihnachten Render",
+                "title": "Winterevent",
+                "description": "Schlittenfahrt als humorvoller Beitrag zum Winterevent – mit Schneepartikeln und Weihnachtsmütze."
+              }
+            ]
+          }
+        ,
+          {
+            "title": "Forward Assault – Skins",
+            "description": "Nach meiner aktiven Zeit bei Blayze Games habe ich in meiner Freizeit weitere Skins entworfen – von Handschuhen bis hin zu Messern. Einige dieser Designs wurden später ins Spiel übernommen. Hier stelle ich eine Auswahl dieser Arbeiten vor.",
+            "images": [
+              {
+                "src": "other_projects/ForwardAssault/skins/Offer.png",
+                "alt": "Skin-Angebot Übersicht",
+                "title": "Skin-Angebotsübersicht",
+                "description": "Visuelle Übersicht aller entworfenen Skins mit Glove- und Beretta-Freischaltungen."
+              },
+              {
+                "src": "other_projects/ForwardAssault/skins/Blossom_Product_Render.gif",
+                "alt": "Blossom Skin Animation",
+                "title": "Blossom",
+                "description": "Animierter Produkt-Render des Blossom-Messers mit floraler Textur."
+              },
+              {
+                "src": "other_projects/ForwardAssault/skins/redBlue_Product.gif",
+                "alt": "Red Blue Skin Animation",
+                "title": "Red Blue",
+                "description": "GIF-Render des zweifarbigen Red Blue Skins – glitchiger Look inklusive."
+              },
+              {
+                "src": "other_projects/ForwardAssault/skins/Webbed_Product.gif",
+                "alt": "Webbed Skin",
+                "title": "Webbed (GIF 1)",
+                "description": "Zweite GIF-Ansicht des Webbed Skins."
+              },
+              {
+                "src": "other_projects/ForwardAssault/skins/Webbed_PR.gif",
+                "alt": "Webbed Skin",
+                "title": "Webbed (GIF 2)",
+                "description": "Erster animierter Produkt-Render des Webbed Skins"
+              },
+              {
+                "src": "other_projects/ForwardAssault/skins/RIP2_PR.gif",
+                "alt": "RIP II Skin Animation",
+                "title": "RIP II",
+                "description": "GIF-Vorschau des RIP II Skins – aggressives Rot-Schwarz-Schema."
+              }
+            ]
+          },
+          {
+            "title": "Bullet Force – Character Renders",
+            "description": "Für das Spiel Bullet Force habe ich mehrere Render der neuen spielbaren Charaktermodelle erstellt. Ziel war es, die Modelle in verschiedenen Posen mit korrektem Lichtsetup darzustellen. Die Render wurden für Marketingmaterialien und Präsentationszwecke verwendet.",
+            "images": [
+              {
+                "src": "other_projects/BulletForce/Renders/NewUS_R1.png",
+                "alt": "US Soldier mit M4",
+                "title": "US – Gewehr",
+                "description": "Render eines US-Soldaten mit Sturmgewehr – Detailfokus auf Ausrüstung und Pose im Anschlag."
+              },
+              {
+                "src": "other_projects/BulletForce/Renders/NewUS_R3.png",
+                "alt": "US Soldier mit Pistole",
+                "title": "US – Pistole",
+                "description": "Render des US-Soldaten mit gezogener Pistole – alternative Bewaffnung im Fokus."
+              },
+              {
+                "src": "other_projects/BulletForce/Renders/RU_P1.png",
+                "alt": "Russischer Soldat frontal",
+                "title": "RU – Frontalansicht",
+                "description": "Frontaler Render eines russischen Soldaten mit AK – realistische Pose und Belichtung."
+              },
+              {
+                "src": "other_projects/BulletForce/Renders/RU_P2.png",
+                "alt": "Russischer Soldat rückseitig",
+                "title": "RU – Rückansicht",
+                "description": "Rückseitiger Render des russischen Charakters mit Blick auf Ausrüstung und Rückenpartie."
+              }
+            ]
+          },
+          {
+            "title": "Bullet Force – Steam Page Visuals",
+            "description": "Für die geplante Aktualisierung der Steam-Präsenz von Bullet Force habe ich neue Grafiken erstellt. Ziel war es, ein modernes und konsistentes visuelles Konzept für die verschiedenen Darstellungsformate in der Steam-Bibliothek umzusetzen.",
+            "images": [
+              {
+                "src": "other_projects/BulletForce/Steam/Library_Capsule.png",
+                "alt": "Steam Capsule",
+                "title": "Library Capsule",
+                "description": "Capsule-Grafik für die kompakte Ansicht in der Steam-Bibliothek – dunkler Hintergrund mit starker Figurensilhouette."
+              },
+              {
+                "src": "other_projects/BulletForce/Steam/Library_Header.png",
+                "alt": "Steam Header",
+                "title": "Library Header",
+                "description": "Horizontales Banner für die Steam-Bibliothek – Charakterpose im roten Licht mit Waffenfokus."
+              },
+              {
+                "src": "other_projects/BulletForce/Steam/Library_Hero.png",
+                "alt": "Steam Hero",
+                "title": "Library Hero",
+                "description": "Hauptgrafik der Steam-Seite – atmosphärischer Render mit US-Charaktermodell in Kampfpose."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "footer": {
+    "copyright": "© 2025 Gustav Schwarzbach. Alle Rechte vorbehalten.",
+    "links": [
+      {"name": "Datenschutz", "href": "#privacy"},
+      {"name": "Impressum", "href": "#imprint"}
+    ]
+  },
+  "legal": {
+    "imprint": {
+      "title": "Impressum",
+      "content": [
+        {
+          "heading": "Angaben gemäß § 5 TMG",
+          "paragraphs": [
+            "<strong>Verantwortlich für den Inhalt:</strong>",
+            "Gustav Schwarzbach<br>c/o flexdienst – #11070<br>Kurt-Schumacher-Straße 76<br>67663 Kaiserslautern<br>Deutschland",
+            "<strong>Kontakt:</strong><br>E-Mail: me@gustavSZB.com<br>Website: https://gustavszb.com/"
+          ]
+        },
+        {
+          "heading": "Haftung für Inhalte",
+          "paragraphs": [
+            "Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht unter der Verpflichtung, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen.",
+            "Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt. Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen werden wir diese Inhalte umgehend entfernen."
+          ]
+        },
+        {
+          "heading": "Haftung für Links",
+          "paragraphs": [
+            "Unser Angebot enthält Links zu externen Websites Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich.",
+            "Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft. Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar. Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist jedoch ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Links umgehend entfernen."
+          ]
+        },
+        {
+          "heading": "Urheberrecht",
+          "paragraphs": [
+            "Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers.",
+            "Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet. Soweit die Inhalte auf dieser Seite nicht vom Betreiber erstellt wurden, werden die Urheberrechte Dritter beachtet. Insbesondere werden Inhalte Dritter als solche gekennzeichnet. Sollten Sie trotzdem auf eine Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Inhalte umgehend entfernen."
+          ]
+        }
+      ]
+    },
+    "privacy": {
+      "title": "Datenschutzerklärung",
+      "content": [
+        {
+          "heading": "1. Datenschutz auf einen Blick",
+          "paragraphs": [
+            "<strong>Allgemeine Hinweise:</strong> Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren personenbezogenen Daten passiert, wenn Sie diese Website besuchen. Personenbezogene Daten sind alle Daten, mit denen Sie persönlich identifiziert werden können.",
+            "Diese Website nutzt keine Cookies und sammelt keine personenbezogenen Daten. Es erfolgt kein Tracking und keine Datenübertragung an Dritte."
+          ]
+        },
+        {
+          "heading": "2. Hosting",
+          "paragraphs": [
+            "Diese Website wird über GitHub Pages gehostet. Der Anbieter GitHub, Inc. kann dabei automatisch bestimmte technische Informationen erfassen, wie z.B. Ihre IP-Adresse.",
+            "Weitere Informationen zum Datenschutz bei GitHub finden Sie in der GitHub Privacy Policy: https://docs.github.com/en/github/site-policy/github-privacy-statement"
+          ]
+        },
+        {
+          "heading": "3. Kontaktaufnahme",
+          "paragraphs": [
+            "Bei der Kontaktaufnahme per E-Mail werden die von Ihnen mitgeteilten Daten zur Bearbeitung der Anfrage und für den Fall von Anschlussfragen bei mir gespeichert.",
+            "Diese Daten gebe ich nicht ohne Ihre Einwilligung weiter."
+          ]
+        },
+        {
+          "heading": "4. Ihre Rechte",
+          "paragraphs": [
+            "Sie haben jederzeit das Recht auf unentgeltliche Auskunft über Ihre gespeicherten personenbezogenen Daten, deren Herkunft und Empfänger und den Zweck der Datenverarbeitung sowie ein Recht auf Berichtigung oder Löschung dieser Daten.",
+            "Hierzu sowie zu weiteren Fragen zum Thema personenbezogene Daten können Sie sich jederzeit unter der im Impressum angegebenen Adresse an mich wenden."
+          ]
+        }
+      ]
+    }
+  }
+} 
