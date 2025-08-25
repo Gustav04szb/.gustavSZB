@@ -585,6 +585,30 @@
                 "description": "Hauptgrafik der Steam-Seite – atmosphärischer Render mit US-Charaktermodell in Kampfpose."
               }
             ]
+          },
+          {
+            "title": "Kukri-Messer – 3D-Modell und Animationen",
+            "description": "Während des 4. Semesters und in den Semesterferien habe ich ein Kukri-Messer komplett in Blender modelliert und texturiert. Mit einem Rig von Forward Assault habe ich FPS-Animationen erstellt und verschiedene Skins designt. Zusätzlich entstanden in Adobe Illustrator Shop-Angebote für das Spiel. Leider wurde das Messer nicht ins Spiel aufgenommen, da es laut Feedback nicht der Qualität der bestehenden Animationen entsprach.",
+            "images": [
+              {
+                "src": "other_projects/ForwardAssault/Kukri/Kukri_Default.png",
+                "alt": "Kukri Standard Render",
+                "title": "Standard-Design",
+                "description": "Das Basis-Kukri-Messer in Blender gerendert – komplett selbst modelliert und texturiert."
+              },
+              {
+                "src": "other_projects/ForwardAssault/Kukri/Kukri_epic_Voltage.png",
+                "alt": "Kukri Voltage Skin",
+                "title": "Epic Voltage Skin",
+                "description": "Elektrischer Voltage-Skin für das Kukri – mit leuchtenden Akzenten und spezieller Materialgestaltung."
+              },
+              {
+                "src": "other_projects/ForwardAssault/Kukri/Kukri_Offers.png",
+                "alt": "Kukri Shop Angebote",
+                "title": "Shop-Angebote",
+                "description": "In Adobe Illustrator gestaltete Shop-Grafiken für verschiedene Kukri-Skins und Angebote."
+              }
+            ]
           }
         ]
       }

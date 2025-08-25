@@ -3,9 +3,9 @@
    Gustav Schwarzbach Portfolio - 2025
 =========================================== */
 
-const CACHE_NAME = 'gustav-portfolio-v1.2.6';
-const STATIC_CACHE = 'gustav-static-v1.2.6';
-const DYNAMIC_CACHE = 'gustav-dynamic-v1.2.6';
+const CACHE_NAME = 'gustav-portfolio-v1.2.7';
+const STATIC_CACHE = 'gustav-static-v1.2.7';
+const DYNAMIC_CACHE = 'gustav-dynamic-v1.2.7';
 
 // Critical assets to cache immediately  
 const CRITICAL_ASSETS = [
