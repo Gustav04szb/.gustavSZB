@@ -597,5 +597,74 @@
       { "name": "Privacy", "href": "#privacy" },
       { "name": "Imprint", "href": "#imprint" }
     ]
+  },
+  "legal": {
+    "imprint": {
+      "title": "Imprint",
+      "content": [
+        {
+          "heading": "Information according to § 5 TMG",
+          "paragraphs": [
+            "<strong>Responsible for content:</strong>",
+            "Gustav Schwarzbach<br>c/o flexdienst – #11070<br>Kurt-Schumacher-Straße 76<br>67663 Kaiserslautern<br>Germany",
+            "<strong>Contact:</strong><br>Email: me@gustavSZB.com<br>Website: https://gustavszb.com/"
+          ]
+        },
+        {
+          "heading": "Liability for Content",
+          "paragraphs": [
+            "As service providers, we are liable for own contents of these websites according to Sec. 7, para. 1 German Telemedia Act (TMG). However, according to Sec. 8 to 10 German Telemedia Act (TMG), service providers are not under obligation to permanently monitor submitted or stored information or to search for evidences that indicate illegal activities.",
+            "Legal obligations to removing information or to blocking the use of information remain unchallenged. In this case, liability is only possible at the time of knowledge about a specific violation of law. Illegal contents will be removed immediately at the time we get knowledge of them."
+          ]
+        },
+        {
+          "heading": "Liability for Links",
+          "paragraphs": [
+            "Our offer includes links to external third party websites. We have no influence on the contents of those websites, therefore we cannot guarantee for those contents. Providers or administrators of linked websites are always responsible for the contents of the linked websites.",
+            "We checked the linked websites for possible violations of law at the time of the establishment of the link. Illegal contents were not detected at the time of the linking. A permanent monitoring of the contents of linked websites cannot be imposed without reasonable indications that there has been a violation of law. Illegal links will be removed immediately at the time we get knowledge of them."
+          ]
+        },
+        {
+          "heading": "Copyright",
+          "paragraphs": [
+            "Contents and compilations published on these websites by the providers are subject to German copyright laws. Reproduction, editing, distribution as well as the use of any kind outside the scope of the copyright law require a written permission of the author or originator.",
+            "Downloads and copies of these websites are permitted for private use only. The commercial use of our contents without permission of the originator is prohibited. Copyright laws of third parties are respected as long as the contents on these websites do not originate from the provider. Contributions of third parties on this site are indicated as such. However, if you notice any violations of copyright law, please inform us. Such contents will be removed immediately."
+          ]
+        }
+      ]
+    },
+    "privacy": {
+      "title": "Privacy Policy",
+      "content": [
+        {
+          "heading": "1. Privacy at a Glance",
+          "paragraphs": [
+            "<strong>General Information:</strong> The following information provides a simple overview of what happens to your personal information when you visit this website. Personal information is any data that can be used to personally identify you.",
+            "This website does not use cookies and does not collect personal data. There is no tracking and no data transmission to third parties."
+          ]
+        },
+        {
+          "heading": "2. Hosting",
+          "paragraphs": [
+            "This website is hosted via GitHub Pages. The provider GitHub, Inc. may automatically collect certain technical information, such as your IP address.",
+            "For more information about GitHub's privacy practices, see the GitHub Privacy Policy: https://docs.github.com/en/github/site-policy/github-privacy-statement"
+          ]
+        },
+        {
+          "heading": "3. Contact",
+          "paragraphs": [
+            "When you contact us by email, the data you provide will be stored for the purpose of processing your inquiry and for follow-up questions.",
+            "This data will not be shared without your consent."
+          ]
+        },
+        {
+          "heading": "4. Your Rights",
+          "paragraphs": [
+            "You have the right to free information about your stored personal data, its origin and recipients and the purpose of data processing, as well as a right to correction or deletion of this data at any time.",
+            "For this as well as for further questions about personal data, you can contact me at any time at the address given in the imprint."
+          ]
+        }
+      ]
+    }
   }
 }

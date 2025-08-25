@@ -1805,6 +1805,8 @@ function openLegalModal(type) {
 function closeLegalModal(type) {
     const modal = document.getElementById(`${type}-modal`);
     if (modal) {
+        // FORCE hide with inline style (same fix as other modals)
+        modal.style.display = 'none';
         modal.classList.remove('active');
         document.body.style.overflow = '';
     }
