@@ -607,6 +607,13 @@
                 "alt": "Kukri Shop Angebote",
                 "title": "Shop-Angebote",
                 "description": "In Adobe Illustrator gestaltete Shop-Grafiken für verschiedene Kukri-Skins und Angebote."
+              },
+              {
+                "src": "../video/Kukri_FPS_animation.mp4",
+                "alt": "First Person Animation",
+                "title": "FPS-Animation",
+                "description": "Eine FPS-Animation wurde in Blender erstellt und in Adobe mit freien Sounds vertont.",
+                "type": "video"
               }
             ]
           }
