@@ -1760,6 +1760,9 @@ section {
   max-height: 90vh;
   overflow: hidden;
   box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
+  overscroll-behavior: contain; /* prevent scroll chaining to body */
+  display: flex;
+  flex-direction: column;
 }
 
 [data-theme="dark"] .gallery-modal-content {
@@ -1830,6 +1833,8 @@ section {
   padding: var(--spacing-xl);
   max-height: 60vh;
   overflow-y: auto;
+  overscroll-behavior: contain; /* lock scroll within modal */
+  -webkit-overflow-scrolling: touch; /* smooth iOS scrolling */
 }
 
 .gallery-image {
@@ -1908,6 +1913,7 @@ section {
     grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
     padding: var(--spacing-md);
     gap: var(--spacing-sm);
+    max-height: calc(85vh - 100px);
   }
   
   .gallery-image-container {
