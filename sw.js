@@ -3,9 +3,9 @@
    Gustav Schwarzbach Portfolio - 2025
 =========================================== */
 
-const CACHE_NAME = 'gustav-portfolio-v1.2.7';
-const STATIC_CACHE = 'gustav-static-v1.2.7';
-const DYNAMIC_CACHE = 'gustav-dynamic-v1.2.7';
+const CACHE_NAME = 'gustav-portfolio-v1.2.8';
+const STATIC_CACHE = 'gustav-static-v1.2.8';
+const DYNAMIC_CACHE = 'gustav-dynamic-v1.2.8';
 
 // Critical assets to cache immediately  
 const CRITICAL_ASSETS = [
@@ -137,6 +137,14 @@ self.addEventListener('fetch', event => {
   
   // Skip cross-origin requests, extension requests, and chrome-extension requests
   if (url.origin !== location.origin || request.url.includes('extension') || request.url.startsWith('chrome-extension')) {
+    return;
+  }
+  
+  // Bypass SW for Range/video media requests to avoid breaking streaming
+  const isRange = !!request.headers.get('range');
+  const isVideoPath = /\.(mp4|webm|mov)(\?.*)?$/i.test(url.pathname);
+  if (isRange || isVideoPath) {
+    event.respondWith(fetch(request));
     return;
   }
   

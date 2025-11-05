@@ -8,6 +8,8 @@ let siteConfig = null;
 let currentImageIndex = 0;
 let allImages = [];
 let currentLanguage = 'en'; // Default language
+let currentFolderSlug = null; // For routing of fullscreen media
+let folderSlugToData = {}; // slug -> { projectId, folderIndex, folder }
 
 /* ===========================================
    INITIALIZATION
@@ -20,6 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
     setupNavigation();
     setupImageViewer();
     setupScrollEffects();
+    setupRoutingHandlers();
 });
 
 /* ===========================================
@@ -454,7 +457,9 @@ function populateProjectsContent() {
     projectsContainer.innerHTML = '';
     
     // Create project categories
-    siteConfig.content.projects.forEach((project) => {
+    // reset slug map each time content is populated
+    folderSlugToData = {};
+    siteConfig.content.projects.forEach((project, projectIndex) => {
         const categoryElement = createProjectCategory(project, project.id);
         projectsContainer.appendChild(categoryElement);
     });
@@ -464,6 +469,9 @@ function populateProjectsContent() {
     
     // Setup lazy loading for newly added images
     setupLazyLoading();
+
+    // After DOM built, attempt to resolve deep link
+    applyInitialRoute();
 }
 
 function populateProjectsDropdown() {
@@ -520,10 +528,16 @@ function createProjectCategory(project, categoryKey) {
                             <h3 class="folder-title">${folder.title}</h3>
                             <p class="folder-description">${folder.description}</p>
                             <div class="folder-preview">
-                                ${folder.images.slice(0, 3).map((image, index) => `
-                                    <div class="preview-thumb" data-image-src="${image.type === 'youtube' ? image.src : `site/images/${image.src}`}" data-folder-images='${JSON.stringify(folder.images.map(img => img.type === 'youtube' ? img.src : `site/images/${img.src}`))}' data-media-type="${image.type || 'image'}">
+                                ${(() => {
+                                    const slug = makeFolderSlug(folder.title, categoryKey, folderIndex);
+                                    // register in map once
+                                    if (!folderSlugToData[slug]) {
+                                        folderSlugToData[slug] = { projectId: categoryKey, folderIndex, folder };
+                                    }
+                                    return folder.images.slice(0, 3).map((image, index) => `
+                                    <div class="preview-thumb" data-folder-slug="${slug}" data-image-src="${image.type === 'youtube' ? image.src : image.type === 'video' ? toRoot(`site/video/${image.src.replace('../video/','')}`) : toRoot(`site/images/${image.src}`)}" data-folder-images='${JSON.stringify(folder.images.map(img => img.type === 'youtube' ? img.src : img.type === 'video' ? toRoot(`site/video/${img.src.replace('../video/','')}`) : toRoot(`site/images/${img.src}`)))}' data-media-type="${image.type || 'image'}">
                                         ${image.type === 'video' ? `
-                                            <video src="site/images/${image.src}" alt="${image.alt}" muted loop>
+                                            <video src="${toRoot(`site/video/${image.src.replace('../video/','')}`)}" alt="${image.alt}" muted loop>
                                                 <span class="video-icon">▶</span>
                                             </video>
                                         ` : image.type === 'youtube' ? `
@@ -532,10 +546,11 @@ function createProjectCategory(project, categoryKey) {
                                                 <div class="youtube-play-icon">▶</div>
                                             </div>
                                         ` : `
-                                            <img src="site/images/${image.src}" alt="${image.alt}" loading="lazy">
+                                            <img src="${toRoot(`site/images/${image.src}`)}" alt="${image.alt}" loading="lazy">
                                         `}
                                     </div>
-                                `).join('')}
+                                `).join('');
+                                })()}
                                 ${folder.images.length > 3 ? `<div class="preview-more">+${folder.images.length - 3}</div>` : ''}
                             </div>
                         </div>
@@ -673,10 +688,12 @@ function setupImageClickHandlers() {
             const imageSrc = previewThumb.getAttribute('data-image-src');
             const mediaType = previewThumb.getAttribute('data-media-type');
             const folderImagesJson = previewThumb.getAttribute('data-folder-images');
+            const folderSlug = previewThumb.getAttribute('data-folder-slug');
             
             if (imageSrc && folderImagesJson) {
                 try {
                     allImages = JSON.parse(folderImagesJson);
+                    currentFolderSlug = folderSlug || null;
                     // Handle different media types
                     if (mediaType === 'video') {
                         openFullscreenVideo(imageSrc);
@@ -712,6 +729,11 @@ function setupImageClickHandlers() {
         if (galleryImage) {
             const imageSrc = galleryImage.getAttribute('data-image-src');
             const mediaType = galleryImage.getAttribute('data-media-type');
+            const modal = document.getElementById('project-gallery-modal');
+            if (modal) {
+                const slugEl = modal.querySelector('[data-gallery-slug]');
+                if (slugEl) currentFolderSlug = slugEl.getAttribute('data-gallery-slug');
+            }
             if (imageSrc) {
                 if (mediaType === 'video') {
                     openFullscreenVideo(imageSrc);
@@ -770,6 +792,9 @@ function openFullscreenImage(imageSrc) {
     modal.style.display = 'flex';
     modal.classList.add('active');
     document.body.style.overflow = 'hidden';
+
+    // Update URL for shareable link
+    updateURLForImage(currentFolderSlug, imageSrc);
 
     // Update navigation buttons
     updateNavigationButtons();
@@ -853,13 +878,19 @@ function openFullscreenVideo(videoSrc) {
     
     // Replace image with video
     const video = document.createElement('video');
-    video.src = videoSrc;
     video.controls = true;
     video.autoplay = true;
     video.muted = true;
     video.loop = true;
+    video.playsInline = true;
+    video.preload = 'metadata';
     video.className = 'fullscreen-image';
     video.id = 'fullscreen-video';
+    // Ensure proper type hint for browsers
+    const source = document.createElement('source');
+    source.src = videoSrc;
+    source.type = 'video/mp4';
+    video.appendChild(source);
     
     // Replace image element with video
     image.parentNode.replaceChild(video, image);
@@ -868,6 +899,9 @@ function openFullscreenVideo(videoSrc) {
     modal.style.display = 'flex';
     modal.classList.add('active');
     document.body.style.overflow = 'hidden';
+
+    // Update URL for shareable link
+    updateURLForImage(currentFolderSlug, videoSrc);
 }
 
 function openFullscreenYoutube(youtubeSrc) {
@@ -885,7 +919,7 @@ function openFullscreenYoutube(youtubeSrc) {
     iframe.src = youtubeSrc;
     iframe.title = 'YouTube video player';
     iframe.frameBorder = '0';
-    iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+    iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
     iframe.referrerPolicy = 'strict-origin-when-cross-origin';
     iframe.allowFullscreen = true;
     iframe.className = 'fullscreen-youtube-iframe';
@@ -899,6 +933,9 @@ function openFullscreenYoutube(youtubeSrc) {
     modal.style.display = 'flex';
     modal.classList.add('active');
     document.body.style.overflow = 'hidden';
+
+    // Update URL for shareable link
+    updateURLForImage(currentFolderSlug, youtubeSrc);
 }
 
 function closeFullscreenImage() {
@@ -926,6 +963,13 @@ function closeFullscreenImage() {
             image.id = 'fullscreen-image';
             youtube.parentNode.replaceChild(image, youtube);
         }
+    }
+
+    // When closing fullscreen, go back to folder URL if available
+    if (currentFolderSlug) {
+        history.pushState({ view: 'folder', slug: currentFolderSlug }, '', `/${currentFolderSlug}`);
+    } else {
+        history.pushState({ view: 'root' }, '', '/');
     }
 }
 
@@ -985,7 +1029,7 @@ function navigateImage(direction) {
             }, 0);
         }
         
-    if (image) {
+        if (image) {
             // Reset transform BEFORE setting new image
             resetImageTransform(image);
             
@@ -1014,6 +1058,9 @@ function navigateImage(direction) {
     }
     
     updateNavigationButtons();
+
+    // Update URL to reflect the newly navigated media
+    updateURLForImage(currentFolderSlug, currentSrc);
 }
 
 function updateNavigationButtons() {
@@ -1561,20 +1608,28 @@ function openProjectGallery(folderTitle, folder) {
     modalTitle.textContent = folderTitle;
     modalDescription.textContent = folder.description;
     
+    // Determine slug for this folder and attach to modal for later
+    const parentProject = siteConfig.content.projects.find(p => p.folders && p.folders.some(f => f.title === folder.title && f.description === folder.description));
+    const categoryKey = parentProject ? parentProject.id : 'folder';
+    const folderIndex = parentProject ? parentProject.folders.indexOf(folder) : 0;
+    const gallerySlug = makeFolderSlug(folder.title, categoryKey, folderIndex);
+    currentFolderSlug = gallerySlug;
+    modal.setAttribute('data-gallery-slug', gallerySlug);
+
     // Create image grid
     modalGrid.innerHTML = folder.images.map((image, index) => `
-        <div class="gallery-image" data-image-src="${image.type === 'youtube' ? image.src : `site/images/${image.src}`}" data-media-type="${image.type || 'image'}">
+        <div class="gallery-image" data-image-src="${image.type === 'youtube' ? image.src : image.type === 'video' ? toRoot(`site/video/${image.src.replace('../video/','')}`) : toRoot(`site/images/${image.src}`)}" data-media-type="${image.type || 'image'}">
             <div class="gallery-image-container">
                 ${image.type === 'video' ? `
-                    <video src="site/images/${image.src}" alt="${image.alt}" controls muted loop>
-                        Your browser does not support the video tag.
+                    <video alt="${image.alt}" controls muted loop playsinline preload="metadata">
+                        <source src="${toRoot(`site/video/${image.src.replace('../video/','')}`)}" type="video/mp4">
                     </video>
                 ` : image.type === 'youtube' ? `
                     <div class="youtube-container">
-                        <iframe src="${image.src}" title="${image.alt}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <iframe src="${image.src}" title="${image.alt}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </div>
                 ` : `
-                    <img src="site/images/${image.src}" alt="${image.alt}" loading="lazy">
+                    <img src="${toRoot(`site/images/${image.src}`)}" alt="${image.alt}" loading="lazy">
                 `}
                 <div class="gallery-overlay">
                     <div class="gallery-image-info">
@@ -1592,7 +1647,14 @@ function openProjectGallery(folderTitle, folder) {
     document.body.style.overflow = 'hidden';
     
     // Update images for fullscreen viewer
-    allImages = folder.images.map(img => img.type === 'youtube' ? img.src : `site/images/${img.src}`);
+    allImages = folder.images.map(img => {
+        if (img.type === 'youtube') return img.src;
+        if (img.type === 'video') return toRoot(`site/video/${img.src.replace('../video/','')}`);
+        return toRoot(`site/images/${img.src}`);
+    });
+
+    // Update URL for shareable folder link
+    history.pushState({ view: 'folder', slug: gallerySlug }, '', `/${gallerySlug}`);
 }
 
 function closeProjectGallery() {
@@ -1603,6 +1665,10 @@ function closeProjectGallery() {
         modal.classList.remove('active');
         document.body.style.overflow = '';
     }
+
+    // Return to root URL when folder gallery is closed
+    history.pushState({ view: 'root' }, '', '/');
+    currentFolderSlug = null;
 }
 
 // Make sure function is globally accessible
@@ -1816,4 +1882,101 @@ function closeLegalModal(type) {
 document.addEventListener('DOMContentLoaded', function() {
     setupLegalModals();
 });
+
+/* ===========================================
+   ROUTING (History API): folders and images
+=========================================== */
+
+// Normalize relative asset paths to absolute-from-root so they work on all routes
+function toRoot(path) {
+    if (!path) return '/';
+    try {
+        const cleaned = String(path).replace(/^[\/]+/, '');
+        return `/${cleaned}`;
+    } catch (_) {
+        return '/';
+    }
+}
+
+function slugify(text) {
+    return (text || '')
+        .toString()
+        .normalize('NFKD')
+        .replace(/[^\w\s-]/g, '')
+        .trim()
+        .replace(/[\s_-]+/g, '-')
+        .replace(/^-+|-+$/g, '')
+        .toLowerCase();
+}
+
+function makeFolderSlug(folderTitle, projectId, folderIndex) {
+    const base = slugify(folderTitle);
+    // Ensure uniqueness by prefixing project id if needed
+    const candidate = base || `folder-${folderIndex}`;
+    const key = `${projectId}:${folderIndex}`;
+    // Map registration happens in createProjectCategory
+    return candidate;
+}
+
+function getBasenameFromSrc(src) {
+    try {
+        const cleaned = src.split('?')[0];
+        const parts = cleaned.split('/');
+        return parts[parts.length - 1];
+    } catch (_) {
+        return encodeURIComponent(src);
+    }
+}
+
+function updateURLForImage(folderSlug, src) {
+    // Keep URL at folder level only; no-op for image deep-links
+}
+
+function setupRoutingHandlers() {
+    window.addEventListener('popstate', (e) => {
+        const path = location.pathname.replace(/^\/+/, '');
+        if (!path) {
+            // root: close modals
+            closeFullscreenImage();
+            closeProjectGallery();
+            currentFolderSlug = null;
+            return;
+        }
+        const segments = path.split('/').filter(Boolean);
+        const slug = segments[0];
+        const media = segments[1];
+        handleRoute(slug, media);
+    });
+}
+
+function applyInitialRoute() {
+    const path = location.pathname.replace(/^\/+/, '');
+    if (!path) return;
+    const parts = path.split('/').filter(Boolean);
+    const slug = parts[0];
+    const media = parts[1];
+    handleRoute(slug, media);
+}
+
+function handleRoute(slug, mediaId) {
+    if (!slug) return;
+    // find folder by slug
+    let folderData = folderSlugToData[slug];
+    if (!folderData) {
+        // Try to lazily build map from DOM if missing
+        const anyThumb = document.querySelector(`.preview-thumb[data-folder-slug="${slug}"]`);
+        if (anyThumb) {
+            // Already registered via createProjectCategory
+            folderData = folderSlugToData[slug];
+        }
+    }
+    if (!folderData) return;
+
+    const { folder } = folderData;
+    // Open gallery only; ignore mediaId and normalize URL
+    openProjectGallery(folder.title, folder);
+    if (mediaId) {
+        history.replaceState({ view: 'folder', slug }, '', `/${slug}`);
+    }
+}
 

@@ -5,19 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gustav Schwarzbach - Portfolio</title>
 
-    <!-- SEO & Meta -->
     <meta name="description" content="Digital portfolio by Gustav Schwarzbach – student of Media Informatics with projects in game design, UI, and programming." id="meta-description">
     <meta name="author" content="Gustav Schwarzbach">
     <meta name="theme-color" content="#EFEFEF">
 
-    <!-- Web App Manifest -->
     <link rel="manifest" href="/manifest.webmanifest">
-
-    <!-- Favicon -->
     <link rel="icon" href="/site/icons/icon-192.png" type="image/png">
     <link rel="apple-touch-icon" href="/site/icons/icon-192.png">
 
-    <!-- Open Graph / Social Preview -->
     <meta property="og:title" content="Gustav Schwarzbach – Portfolio" id="og-title">
     <meta property="og:description" content="Explore game design, creative coding and UI/UX projects." id="og-description">
     <meta property="og:image" content="https://gustavszb.com/site/icons/icon-512.png">
@@ -29,14 +24,12 @@
     <meta name="twitter:description" content="Explore game design, creative coding and UI/UX projects." id="twitter-description">
     <meta name="twitter:image" content="https://gustavszb.com/site/icons/icon-512.png">
 
-    <!-- Fonts & Styles -->
     <link rel="stylesheet" href="/site/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body data-theme="light">
-    <!-- Navigation Bar -->
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-logo">
@@ -56,9 +49,7 @@
                 <a href="#about" class="nav-link" id="nav-about">About</a>
                 <div class="nav-projects-container">
                     <a href="#projects" class="nav-link" id="nav-projects">Projects</a>
-                    <div class="nav-projects-dropdown" id="nav-projects-dropdown">
-                        <!-- Dropdown items will be populated by JavaScript -->
-                    </div>
+                    <div class="nav-projects-dropdown" id="nav-projects-dropdown"></div>
                 </div>
                 <a href="#contact" class="nav-link" id="nav-contact">Contact</a>
                 <button class="lang-toggle" id="lang-toggle" aria-label="Toggle language">
@@ -81,17 +72,13 @@
         </div>
     </nav>
 
-    <!-- Main Content -->
     <main>
-        <!-- Hero Section -->
         <section id="home" class="hero-section">
             <div class="container">
                 <div class="hero-content">
                     <h1 class="hero-title" id="hero-title">Gustav Schwarzbach</h1>
                     <p class="hero-subtitle" id="hero-subtitle">Media Informatics Student & Creative Developer</p>
-                    <div class="hero-description" id="hero-description">
-                        <!-- Content will be loaded from JSON -->
-                    </div>
+                    <div class="hero-description" id="hero-description"></div>
                     <div class="hero-actions">
                         <a href="#projects" class="btn btn-primary" id="btn-view-projects">View Projects</a>
                         <a href="#contact" class="btn btn-secondary" id="btn-get-in-touch">Get in Touch</a>
@@ -100,96 +87,75 @@
             </div>
         </section>
 
-        <!-- About Section -->
         <section id="about" class="about-section">
             <div class="container">
                 <h2 class="section-title" id="about-title">About Me</h2>
                 <div class="about-content">
                     <div class="about-text">
-                        <p id="about-description">As a Media Informatics student at HTW Dresden, I combine technical expertise with creative vision to build meaningful digital experiences.</p>
-                        <div class="skills-grid" id="skills-grid">
-                            <!-- Skills will be loaded from JSON -->
-                        </div>
+                        <p id="about-description"></p>
+                        <div class="skills-grid" id="skills-grid"></div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Projects Section -->
         <section id="projects" class="projects-section">
             <div class="container">
                 <h2 class="section-title" id="projects-title">Projects</h2>
-                <div class="projects-container" id="projects-container">
-                    <!-- Project sections will be dynamically loaded -->
-                </div>
+                <div class="projects-container" id="projects-container"></div>
             </div>
         </section>
 
-        <!-- Contact Section -->
         <section id="contact" class="contact-section">
             <div class="container">
                 <h2 class="section-title" id="contact-title">Let's Connect</h2>
                 <div class="contact-content">
                     <div class="contact-text">
-                        <p id="contact-description">I'm currently open to internships, working student positions, and collaborative opportunities in tech and design fields.</p>
+                        <p id="contact-description"></p>
                     </div>
-                    <div class="contact-links" id="contact-links">
-                        <!-- Contact links will be loaded from JSON -->
-                    </div>
+                    <div class="contact-links" id="contact-links"></div>
                 </div>
             </div>
         </section>
     </main>
 
-    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-text" id="footer-copyright">
-                    <!-- Copyright will be loaded from JSON -->
-                </div>
-                <div class="footer-links" id="footer-links">
-                    <!-- Footer links will be loaded from JSON -->
-                </div>  
+                <div class="footer-text" id="footer-copyright"></div>
+                <div class="footer-links" id="footer-links"></div>
             </div>
         </div>
     </footer>
 
-    <!-- Fullscreen Image Modal -->
     <div id="fullscreen-container" class="fullscreen-modal">
         <img id="fullscreen-image" class="fullscreen-image" alt="Fullscreen view">
         <button id="close-button" class="modal-close">&times;</button>
         <button id="prev-button" class="nav-button nav-prev">&#8249;</button>
-        <button id="next-button" class="nav-button nav-next">&#8250;</button>   
+        <button id="next-button" class="nav-button nav-next">&#8250;</button>
     </div>
 
-    <!-- Imprint Modal -->
     <div id="imprint-modal" class="legal-modal">
         <div class="legal-modal-content">
             <div class="legal-modal-header">
                 <h2 id="imprint-title">Impressum</h2>
                 <button class="legal-modal-close" id="imprint-close">&times;</button>
             </div>
-            <div class="legal-modal-body" id="imprint-content">
-                <!-- Content will be loaded from config -->
-            </div>
+            <div class="legal-modal-body" id="imprint-content"></div>
         </div>
     </div>
 
-    <!-- Privacy Modal -->
     <div id="privacy-modal" class="legal-modal">
         <div class="legal-modal-content">
             <div class="legal-modal-header">
                 <h2 id="privacy-title">Datenschutz</h2>
                 <button class="legal-modal-close" id="privacy-close">&times;</button>
             </div>
-            <div class="legal-modal-body" id="privacy-content">
-                <!-- Content will be loaded from config -->
-            </div>
+            <div class="legal-modal-body" id="privacy-content"></div>
         </div>
     </div>
 
-    <!-- Scripts -->
     <script src="/site/scripts.js"></script>
 </body>
 </html>
+

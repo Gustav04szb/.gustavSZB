@@ -11,14 +11,14 @@
   "lang": "en",
   "scope": "/",
   "icons": [
-    {
-      "src": "./site/icons/icon-192.png",
+  {
+      "src": "/site/icons/icon-192.png",
       "type": "image/png",
       "sizes": "192x192",
       "purpose": "any maskable"
     },
     {
-      "src": "./site/icons/icon-512.png",
+      "src": "/site/icons/icon-512.png",
       "type": "image/png",
       "sizes": "512x512",
       "purpose": "any maskable"
@@ -26,14 +26,14 @@
   ],
   "screenshots": [
     {
-      "src": "./screenshot-desktop.png",
+      "src": "/screenshot-desktop.png",
       "sizes": "1280x800",
       "type": "image/png",
       "form_factor": "wide",
       "label": "Gustav's Portfolio - Desktop View"
     },
     {
-      "src": "./screenshot-mobile.png", 
+      "src": "/screenshot-mobile.png", 
       "sizes": "390x844",
       "type": "image/png",
       "form_factor": "narrow",
